@@ -27,4 +27,22 @@ for x in arry:
 print("=====")
 for y in arry[1:3]:
     print(y)
+
+questions = ['name', 'address', 'favorite color']
+answers = ['sushmita ', 'banepa', 'blue']
+for q, a in zip(questions, answers):
+     print('What is your {0}?  It is {1}.'.format(q, a))
+
+
+for i in reversed(range(1, 10, 2)):
+    print(i)     
+
+
+basket = ['apple', 'orange', 'pear', 'orange', 'banana']   
+for f in sorted(basket):
+    print(f)
+    print("====")
+for s in sorted(set(basket)):
+    print(s)    
     
+
