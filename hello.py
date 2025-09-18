@@ -131,3 +131,6 @@ if "khusi" in txt:
   print("Yes, 'free' is present.")
 
   print(txt[7:11])
+
+fname = input("Enter your name: ")
+print("Hello,", fname)
