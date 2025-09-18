@@ -36,3 +36,4 @@ def add(x):
     return 5 + x
 # print(add(5))
 print("Sum is " + str(add(10)))
+ 
