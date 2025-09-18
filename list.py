@@ -46,3 +46,21 @@ for s in sorted(set(basket)):
     print(s)    
     
 
+my_array = [7, 8, 9 ,4, 5, 1, 0]
+minVal = my_array[0]
+
+for i in my_array:
+    if i < minVal:
+        minVal = i
+print("min Value is ", minVal)
+
+n = len(my_array)
+
+for m in range(n-1):
+    for k in range(n-m-1):
+        if my_array[k] > my_array[k + 1]:
+            my_array[k], my_array[k + 1] =  my_array[k + 1] , my_array[k]
+
+print("Sorted array:", my_array)
+
+
