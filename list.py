@@ -91,5 +91,14 @@ print(len(thislist))
 tropical.clear()
 print(len(tropical))
 
+numbers = [12, 45, 7, 23, 89, 5, 33]
+print("maximum number is ", max(numbers))
+print("minimum number is ", min(numbers))
+print("sum is ", sum(numbers))
+print("sorted list is ", sorted(numbers))
+print("reversed list is ", list(reversed(numbers)))
+print("original list is ", numbers)
+
+
 
 
