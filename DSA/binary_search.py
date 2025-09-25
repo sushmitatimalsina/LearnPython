@@ -16,3 +16,21 @@ target = 10
 result = binary_search(numbers, target)
 print(result)  
 
+
+def binary(a, target1):
+    left = 0
+    right = len(a) - 1
+    while left <= right:
+        m = (left + right) // 2
+        if a[m] == target1:
+            return m
+        elif a[m] < target1:
+            left = m + 1
+        else:
+            right = m - 1
+    return -1
+
+arr = [1, 3, 5, 7, 9, 11, 13]
+target1 = 7
+result1 = binary(arr, target1)
+print(result1)        
