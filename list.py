@@ -63,4 +63,33 @@ for m in range(n-1):
 
 print("Sorted array:", my_array)
 
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+# thislist.insert(1, "orange")
+# print(thislist)
+# thislist.remove("banana")
+# print(thislist)
+
+# thislist[1:3] = ["blackcurrant", "watermelon"]
+# print(thislist)
+
+
+tropical = ["mango", "pineapple", "papaya"]
+thislist.extend(tropical)
+print(thislist)
+thislist.pop()
+print(thislist)
+
+del thislist[0]
+print(thislist)
+
+# del thislist
+# print(thislist)  # This will raise an error because 'thislist' is deleted
+
+# thislist.clear()
+# print(thislist)  # This will print an empty list []
+print(len(thislist))
+tropical.clear()
+print(len(tropical))
+
+
 
