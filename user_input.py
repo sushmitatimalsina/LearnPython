@@ -13,3 +13,4 @@ print(f"Do you want a {fav1} {fav2} with {fav3} legs?")
 x = input("Enter a number:")
 y = math.sqrt(float(x))
 print(f"The square root of {x} is {y}")
+
