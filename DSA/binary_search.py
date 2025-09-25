@@ -16,6 +16,8 @@ target = 10
 result = binary_search(numbers, target)
 print(result)  
 
+# if target is not present in the list
+# return -1
 
 def binary(a, target1):
     left = 0
@@ -31,6 +33,6 @@ def binary(a, target1):
     return -1
 
 arr = [1, 3, 5, 7, 9, 11, 13]
-target1 = 7
+target1 = 14
 result1 = binary(arr, target1)
 print(result1)        
