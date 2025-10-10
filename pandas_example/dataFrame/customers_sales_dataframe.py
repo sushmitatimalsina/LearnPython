@@ -30,3 +30,18 @@ print(customers)
 sales['order_date'] = pd.to_datetime(sales['order_date'])
 print("after conveting order_date to datetime")
 print(sales)
+
+sales['amount'].fillna(sales['amount'].median(), inplace=True)
+print("after filling amount with the medium amounts :")
+print(sales)
+
+customers.drop_duplicates(inplace=True)
+print("===")
+print(customers)
+sales.drop_duplicates()
+print("===")
+print(sales)
+
+merged_data = pd.merge(sales, customers, on='customer_id', how='left')
+print("===")
+print(merged_data)
