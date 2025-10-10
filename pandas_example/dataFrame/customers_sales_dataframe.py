@@ -22,3 +22,11 @@ print(customers)
 customers['city'].fillna('Not Provided', inplace=True)
 print("After filling city:")
 print(customers)
+
+customers['age'].fillna(customers['age'].mean(), inplace=True)
+print("After filling mean age:")
+print(customers)
+
+sales['order_date'] = pd.to_datetime(sales['order_date'])
+print("after conveting order_date to datetime")
+print(sales)
