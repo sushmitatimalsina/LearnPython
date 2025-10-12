@@ -9,7 +9,14 @@ data = {
 
 df = pd.DataFrame(data)
 print("Original DataFrame:\n", df)
+missing_values = df.isnull()
+print("\nMissing Values:\n", missing_values)
 
 missing_count = df.isnull().sum()
 print("\nMissing Values Count:\n", missing_count)
 
+df_drop_rows = df.dropna()
+print("\nDrop rows with missing values:\n", df_drop_rows)
+
+df_drop_cols = df.dropna(axis=1)
+print("\nDrop columns with missing values:\n", df_drop_cols)
