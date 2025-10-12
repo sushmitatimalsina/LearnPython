@@ -20,3 +20,8 @@ print("\nDrop rows with missing values:\n", df_drop_rows)
 
 df_drop_cols = df.dropna(axis=1)
 print("\nDrop columns with missing values:\n", df_drop_cols)
+
+df['name'].fillna('Unknown', inplace=True)
+df['department'].fillna('General', inplace=True)
+df['salary'].fillna(df['salary'].mean(), inplace=True)
+print("\nDataFrame after fillna():\n", df)
