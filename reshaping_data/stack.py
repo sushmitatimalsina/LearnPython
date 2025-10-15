@@ -10,3 +10,6 @@ print("\nOriginal DataFrame:\n", df2)
 # Stack: moves columns to row level
 stacked = df2.stack()
 print("\nAfter Stack:\n", stacked)
+
+unstacked = stacked.unstack()
+print("\nAfter Unstack:\n", unstacked)
