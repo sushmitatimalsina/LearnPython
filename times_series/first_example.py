@@ -12,3 +12,7 @@ df['date'] = pd.to_datetime(df['date'])
 df.set_index('date', inplace=True)
 weekly_sales = df.resample('W').sum()
 print("Weekly Sales:\n", weekly_sales)
+
+df['day_of_week'] = df.index.day_name()
+df['month'] = df.index.month
+print("\nData with day and month:\n", df)
