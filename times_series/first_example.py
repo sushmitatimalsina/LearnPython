@@ -16,3 +16,9 @@ print("Weekly Sales:\n", weekly_sales)
 df['day_of_week'] = df.index.day_name()
 df['month'] = df.index.month
 print("\nData with day and month:\n", df)
+
+df['rolling_avg'] = df['sales'].rolling(window=3).mean()
+
+df['expanding_avg'] = df['sales'].expanding().mean()
+
+print("\nData with Rolling and Expanding averages:\n", df)
