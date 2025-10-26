@@ -20,3 +20,7 @@ print(indexed_df.loc['Bob'])
 print("======")
 # Select specific rows and columns
 print(indexed_df.loc[['Alice', 'Eva'], ['Age']])
+
+print("======")
+# Select the first row
+print(df.iloc[0])
