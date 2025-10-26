@@ -24,3 +24,6 @@ print(indexed_df.loc[['Alice', 'Eva'], ['Age']])
 print("======")
 # Select the first row
 print(df.iloc[0])
+
+# Select first 3 rows and first 2 columns
+print(df.iloc[0:3, 0:2])
