@@ -27,3 +27,7 @@ print(df.iloc[0])
 
 # Select first 3 rows and first 2 columns
 print(df.iloc[0:3, 0:2])
+
+print("======")
+# Select rows where Age > 25
+print(df[df['Age'] > 25])
