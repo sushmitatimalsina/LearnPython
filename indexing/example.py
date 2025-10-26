@@ -11,3 +11,6 @@ print("Original DataFrame:\n", df)
 
 indexed_df = df.set_index('Name')
 print("\nDataFrame with 'Name' as index:\n", indexed_df)
+
+reset_df = indexed_df.reset_index()
+print("\nDataFrame after resetting index:\n", reset_df)
