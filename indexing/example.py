@@ -17,3 +17,6 @@ print("\nDataFrame after resetting index:\n", reset_df)
 
 # Select one row by label
 print(indexed_df.loc['Bob'])
+print("======")
+# Select specific rows and columns
+print(indexed_df.loc[['Alice', 'Eva'], ['Age']])
