@@ -1,0 +1,13 @@
+import pandas as pd
+
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eva'],
+    'Age': [25, 30, 22, 28, 26],
+    'City': ['New York', 'Los Angeles', 'Chicago', 'Houston', 'Miami']
+}
+
+df = pd.DataFrame(data)
+print("Original DataFrame:\n", df)
+
+indexed_df = df.set_index('Name')
+print("\nDataFrame with 'Name' as index:\n", indexed_df)
