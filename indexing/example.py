@@ -14,3 +14,6 @@ print("\nDataFrame with 'Name' as index:\n", indexed_df)
 
 reset_df = indexed_df.reset_index()
 print("\nDataFrame after resetting index:\n", reset_df)
+
+# Select one row by label
+print(indexed_df.loc['Bob'])
