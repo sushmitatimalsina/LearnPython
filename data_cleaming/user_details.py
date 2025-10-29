@@ -12,8 +12,24 @@ data = {
 df = pd.DataFrame(data)
 print("Original DataFrame:\n", df)
 
-print("\n data info")
+print("\nData Info:")
 print(df.info())
 
-print("\n Check for missing values")
+print("\nCheck for missing values:")
 print(df.isnull().sum())
+
+# Clean the data
+df['Name'] = df['Name'].str.strip()
+df['City'] = df['City'].str.strip().str.title()
+
+# Handle missing values
+df['Age'].fillna(df['Age'].mean(), inplace=True)
+df['City'].fillna('Unknown', inplace=True)
+
+# Convert JoinDate to datetime
+df['JoinDate'] = pd.to_datetime(df['JoinDate'], errors='coerce')
+
+# Remove duplicates
+df.drop_duplicates(inplace=True)
+
+print("\nCleaned DataFrame:\n", df)
