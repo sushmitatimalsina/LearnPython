@@ -3,7 +3,11 @@ import csv
 data = [
     {"Name": "Alice", "Age": 25, "City": "New York"},
     {"Name": "Bob", "Age": 30, "City": "Los Angeles"},
+    {"Name": "Charlie", "Age": 22, "City": "Chicago"},
+    {"Name": "Alice", "Age": 25, "City": "New York"},
+    {"Name": "Bob", "Age": 30, "City": "Los Angeles"},
     {"Name": "Charlie", "Age": 22, "City": "Chicago"}
+
 ]
 
 fieldnames = ["Name", "Age", "City"]
