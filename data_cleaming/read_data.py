@@ -19,3 +19,14 @@ print("======")
 print(df.isnull().sum())
 
 print("======")
+print(df.dropna()) # Drop rows
+
+print("======")
+df = df.dropna(axis=1) # Drop columns
+print(df)
+
+# remove duplicates
+print("======")
+df = df.drop_duplicates()
+print(df)
+
