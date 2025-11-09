@@ -76,4 +76,10 @@ elif score >=80:
 else:
       print("Grade: C")           
 
+# Multiple conditions using AND
+num = 15
+if num > 0 and num % 2 == 0:
+    print(f"{num} is a positive even number.")
+
+
 
