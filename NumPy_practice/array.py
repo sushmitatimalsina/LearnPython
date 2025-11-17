@@ -29,9 +29,12 @@ import numpy as np
 # arr.reshape(3, 3)
 # print(arr)
 
-print(np.linspace(0, 1, 5))
+# print(np.linspace(0, 1, 5))
 
-arr = np.array([[1, 2, 3], [4, 5, 6]])
-# arr.shape
-print(arr.shape)
-print(arr.size)
+# arr = np.array([[1, 2, 3], [4, 5, 6]])
+# # arr.shape
+# print(arr.shape)
+# print(arr.size)
+
+
+print(np.random.rand(3))
