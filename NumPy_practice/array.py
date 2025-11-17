@@ -23,3 +23,7 @@ a = np.array([1, 2, 3])
 b = np.array([4, 5, 6])
 print(a + b)  
 print(a * b) 
+
+arr = np.arange(1, 10)
+arr.reshape(3, 3)
+print(arr)
