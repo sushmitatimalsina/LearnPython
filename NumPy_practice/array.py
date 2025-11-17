@@ -30,3 +30,7 @@ import numpy as np
 # print(arr)
 
 print(np.linspace(0, 1, 5))
+
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+# arr.shape
+print(arr.shape)
