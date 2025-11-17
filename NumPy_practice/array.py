@@ -5,6 +5,9 @@ print(arr)
 
 arr2D = np.array([[1,2],[4,6]])
 print(arr2D)
+print(arr2D[0,1])
+print(arr2D[:, 1] )
+print(arr2D[1, :]  )
 
 print(np.zeros((3, 3)))
 
