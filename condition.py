@@ -95,5 +95,9 @@
 # print(len(thistuple))
 
 # not tuple 
-thistuple = ("apple")
-print(type(thistuple))
+# thistuple = ("apple")
+# print(type(thistuple))
+
+tuple1 = ("abc", 34, True, 40, "male")
+
+print(tuple1)
