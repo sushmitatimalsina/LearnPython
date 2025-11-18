@@ -61,25 +61,29 @@
 # 
 # if statement
 # 
-age = 18
-if age >= 18:
-    print("You are eligible to vote.")
-else:
-       print("You are not eligible to vote.")    
+# age = 18
+# if age >= 18:
+#     print("You are eligible to vote.")
+# else:
+#        print("You are not eligible to vote.")    
 
-# if-elif-else statement     
-score = 85
-if score >= 90:
-      print("Grade: A")
-elif score >=80:
-      print("Grade: B") 
-else:
-      print("Grade: C")           
+# # if-elif-else statement     
+# score = 85
+# if score >= 90:
+#       print("Grade: A")
+# elif score >=80:
+#       print("Grade: B") 
+# else:
+#       print("Grade: C")           
 
-# Multiple conditions using AND
-num = 15
-if num > 0 and num % 2 == 0:
-    print(f"{num} is a positive even number.")
+# # Multiple conditions using AND
+# num = 15
+# if num > 0 and num % 2 == 0:
+#     print(f"{num} is a positive even number.")
 
+fruits = ["apple", "banana", "cherry"]
 
-
+for x in fruits:
+    print(x)
+    if x == "banana":
+        break
