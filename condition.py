@@ -81,12 +81,14 @@
 # if num > 0 and num % 2 == 0:
 #     print(f"{num} is a positive even number.")
 
-fruits = ["apple", "banana", "cherry"]
+# fruits = ["apple", "banana", "cherry"]
 
-for x in fruits:
+# for x in fruits:
+# #     print(x)
+#     if x == "banana":
+#       #   break
+#       continue
 #     print(x)
-    if x == "banana":
-      #   break
-      continue
-    print(x)
 
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
