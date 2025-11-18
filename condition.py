@@ -90,6 +90,10 @@
 #       continue
 #     print(x)
 
-thistuple = ("apple", "banana", "cherry")
-print(thistuple)
-print(len(thistuple))
+# thistuple = ("apple", "banana", "cherry")
+# print(thistuple)
+# print(len(thistuple))
+
+# not tuple 
+thistuple = ("apple")
+print(type(thistuple))
