@@ -106,3 +106,13 @@ print(square(5))  # 25
 numbers = [1, 2, 3, 4]
 squared_numbers = list(map(lambda x: x**2, numbers))
 print(squared_numbers)  # [1, 4, 9, 16]
+
+
+def check_age(age):
+    if age >= 18:
+        return "Adult"
+    else:
+        return "Minor"
+
+print(check_age(20))
+print(check_age(12))
