@@ -58,3 +58,12 @@ def print_details(**kwargs):
         print(f"{key}: {value}")
 
 print_details(name="Sushmita", age=22, city="Kathmandu")
+
+def arithmetic_operations(a, b):
+    sum_ = a + b
+    diff = a - b
+    prod = a * b
+    return sum_, diff, prod
+
+s, d, p = arithmetic_operations(10, 5)
+print(s, d, p)
