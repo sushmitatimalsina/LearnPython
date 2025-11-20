@@ -97,3 +97,12 @@ df = clean_data(df)
 df = filter_adults(df)
 df = add_full_name(df)
 print(df)
+
+# Simple lambda
+square = lambda x: x**2
+print(square(5))  # 25
+
+# Lambda inside map
+numbers = [1, 2, 3, 4]
+squared_numbers = list(map(lambda x: x**2, numbers))
+print(squared_numbers)  # [1, 4, 9, 16]
