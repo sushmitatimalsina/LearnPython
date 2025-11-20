@@ -46,3 +46,15 @@ def add_numbers(a, b):
     return a + b
 
 print(add_numbers(10, 20))
+
+def sum_numbers(*args):
+    return sum(args)
+
+print(sum_numbers(1, 2, 3, 4))  # 10
+
+# **kwargs: multiple keyword arguments
+def print_details(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+print_details(name="Sushmita", age=22, city="Kathmandu")
