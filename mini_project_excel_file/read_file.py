@@ -7,3 +7,7 @@ print("-----------------")
 
 filtered = df[df["Age"] > 23]
 print(filtered)
+
+print("-----------------")
+cleaned = filtered.dropna(subset=["Age"])
+print(cleaned)
