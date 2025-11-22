@@ -116,3 +116,8 @@ def check_age(age):
 
 print(check_age(20))
 print(check_age(12))
+
+def filter_even(numbers):
+    return [n for n in numbers if n % 2 == 0]
+
+print(filter_even([1, 2, 3, 4, 5, 6]))
