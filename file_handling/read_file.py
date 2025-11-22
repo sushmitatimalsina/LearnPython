@@ -4,5 +4,5 @@ import pandas as pd
 #     content = file.read()
 # print(content)    
 
-df = pd.read_excel(r"D:\python\python\file_handling\output.xlsx")
+df = pd.read_excel(r"D:\python\python\output.xlsx")
 print(df)
