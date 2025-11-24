@@ -19,3 +19,6 @@ for item in data:
 
 df = pd.DataFrame(users)
 print(df)
+
+df.to_excel("api_users.xlsx", index=False)
+print("Data saved to 'api_users.xlsx'")
