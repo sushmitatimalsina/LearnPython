@@ -123,4 +123,14 @@ print("Sum of each column:", matrix.sum(axis=0))
 # Mean along columns
 print("Mean of each column:", matrix.mean(axis=0))
 
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+
+# Horizontal stack
+h_stack = np.hstack((a, b))
+print("Horizontal Stack:", h_stack)
+
+# Vertical stack
+v_stack = np.vstack((a, b))
+print("Vertical Stack:\n", v_stack)
 
