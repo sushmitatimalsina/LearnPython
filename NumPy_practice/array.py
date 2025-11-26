@@ -81,3 +81,17 @@ print("Random Integers:\n", rand_int)
 # Random floats between 0 and 1
 rand_float = np.random.rand(3, 3)
 print("Random Floats:\n", rand_float)
+
+import numpy as np
+
+arr = np.arange(12)  # array from 0 to 11
+print("Original array:", arr)
+
+# Reshape to 3x4
+reshaped = arr.reshape(3, 4)
+print("Reshaped array (3x4):\n", reshaped)
+
+# Flatten back
+flattened = reshaped.flatten()
+print("Flattened array:", flattened)
+
