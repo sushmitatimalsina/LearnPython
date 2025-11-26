@@ -134,3 +134,16 @@ print("Horizontal Stack:", h_stack)
 v_stack = np.vstack((a, b))
 print("Vertical Stack:\n", v_stack)
 
+A = np.array([[1, 2], [3, 4]])
+B = np.array([[5, 6], [7, 8]])
+
+# Matrix multiplication
+C = np.dot(A, B)
+print("Matrix multiplication:\n", C)
+
+# Element-wise multiplication
+E = A * B
+print("Element-wise multiplication:\n", E)
+
+# Transpose
+print("Transpose of A:\n", A.T)
