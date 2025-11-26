@@ -42,13 +42,23 @@ import numpy as np
 
 # print(np.random.rand(3, 3))
 
-arr = np.array([1, 2, 3, 4, 5])
+# arr = np.array([1, 2, 3, 4, 5])
 
-# Arithmetic operations
-print("Add 5:", arr + 5)
-print("Multiply by 2:", arr * 2)
+# # Arithmetic operations
+# print("Add 5:", arr + 5)
+# print("Multiply by 2:", arr * 2)
 
-# Sum, Mean, Max
-print("Sum:", arr.sum())
-print("Mean:", arr.mean())
-print("Max:", arr.max())
+# # Sum, Mean, Max
+# print("Sum:", arr.sum())
+# print("Mean:", arr.mean())
+# print("Max:", arr.max())
+
+
+arr = np.array([10, 20, 30, 40, 50])
+
+# Access elements
+print("First element:", arr[0])
+print("Last element:", arr[-1])
+
+# Slice
+print("Elements 1 to 3:", arr[1:4])
