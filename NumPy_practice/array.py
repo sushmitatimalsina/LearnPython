@@ -74,3 +74,10 @@ print("Second column:", matrix[:, 1])
 # Element-wise operations
 print("Multiply by 2:\n", matrix * 2)
 
+# Random integers from 0 to 9
+rand_int = np.random.randint(0, 10, size=(3, 3))
+print("Random Integers:\n", rand_int)
+
+# Random floats between 0 and 1
+rand_float = np.random.rand(3, 3)
+print("Random Floats:\n", rand_float)
