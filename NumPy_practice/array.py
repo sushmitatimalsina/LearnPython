@@ -108,3 +108,19 @@ print("Mask for values divisible by 20:", mask)
 print("Filtered values:", arr[mask])
 
 
+
+matrix = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+
+# Sum of all elements
+print("Total sum:", matrix.sum())
+
+# Sum along rows (axis=1)
+print("Sum of each row:", matrix.sum(axis=1))
+
+# Sum along columns (axis=0)
+print("Sum of each column:", matrix.sum(axis=0))
+
+# Mean along columns
+print("Mean of each column:", matrix.mean(axis=0))
+
+
