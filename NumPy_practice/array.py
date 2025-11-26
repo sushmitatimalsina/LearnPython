@@ -95,3 +95,16 @@ print("Reshaped array (3x4):\n", reshaped)
 flattened = reshaped.flatten()
 print("Flattened array:", flattened)
 
+
+arr = np.array([10, 15, 20, 25, 30])
+
+# Filter values greater than 20
+filtered = arr[arr > 20]
+print("Values greater than 20:", filtered)
+
+# Boolean mask
+mask = arr % 20 == 0
+print("Mask for values divisible by 20:", mask)
+print("Filtered values:", arr[mask])
+
+
