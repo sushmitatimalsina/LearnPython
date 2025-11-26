@@ -62,3 +62,15 @@ print("Last element:", arr[-1])
 
 # Slice
 print("Elements 1 to 3:", arr[1:4])
+
+matrix = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+
+# Access row
+print("First row:", matrix[0])
+
+# Access column
+print("Second column:", matrix[:, 1])
+
+# Element-wise operations
+print("Multiply by 2:\n", matrix * 2)
+
