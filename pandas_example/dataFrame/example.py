@@ -14,14 +14,28 @@ import pandas as pd
 # # Display the DataFrame
 # print(df)
 
-import pandas as pd
+# import pandas as pd
 
-# Create a simple DataFrame
+# # Create a simple DataFrame
+# data = {
+#     'Name': ['Alice', 'Bob', 'Charlie'],
+#     'Age': [25, 30, 22],
+#     'City': ['Kathmandu', 'Pokhara', 'Lalitpur']
+# }
+
+# df = pd.DataFrame(data)
+# print(df)
+
+
+
+
 data = {
-    'Name': ['Alice', 'Bob', 'Charlie'],
-    'Age': [25, 30, 22],
-    'City': ['Kathmandu', 'Pokhara', 'Lalitpur']
+    'City': ['Kathmandu', 'Kathmandu', 'Pokhara', 'Pokhara'],
+    'Sales': [200, 300, 150, 400]
 }
 
 df = pd.DataFrame(data)
-print(df)
+
+# Group by city and sum sales
+grouped = df.groupby('City')['Sales'].sum()
+print(grouped)
