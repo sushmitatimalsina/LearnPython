@@ -18,3 +18,7 @@ print(df)
 array_data = df["B"].to_numpy()
 print("\nNumPy array from column B:")
 print(array_data)
+
+df["Category"] = np.where(df["A"] > 5, "High", "Low")
+print("\nDataFrame with Category column based on values in column A:")
+print(df)
