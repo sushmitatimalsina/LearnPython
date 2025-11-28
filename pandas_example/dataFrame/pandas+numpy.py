@@ -22,3 +22,15 @@ print(array_data)
 df["Category"] = np.where(df["A"] > 5, "High", "Low")
 print("\nDataFrame with Category column based on values in column A:")
 print(df)
+
+
+import pandas as pd
+data = {
+    'City': ['Kathmandu', 'Kathmandu', 'Pokhara', 'Pokhara'],
+    'Sales': [200, 300, 150, 400]
+}
+df = pd.DataFrame(data)
+# Group by city and sum sales
+grouped = df.groupby('City')['Sales'].sum()
+print("\nGrouped Sales by City:")
+print(grouped)
