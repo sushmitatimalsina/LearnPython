@@ -5,3 +5,7 @@ arr = np.random.randint(1, 10, size=(4, 3))
 df = pd.DataFrame(arr, columns=["A", "B", "C"])
 print("DataFrame created from NumPy array:")
 print(df)
+
+# Perform basic statistical operations
+print("\nStatistical Summary:")
+print(df.describe())
