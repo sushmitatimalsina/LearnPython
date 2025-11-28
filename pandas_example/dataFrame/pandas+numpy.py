@@ -14,3 +14,7 @@ print(df.describe())
 df['Mean'] = df.mean(axis=1)
 print("\nDataFrame with Mean column:")
 print(df)
+
+array_data = df["B"].to_numpy()
+print("\nNumPy array from column B:")
+print(array_data)
