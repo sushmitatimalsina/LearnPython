@@ -9,3 +9,8 @@ print(df)
 # Perform basic statistical operations
 print("\nStatistical Summary:")
 print(df.describe())
+
+# Add a new column with the mean of each row
+df['Mean'] = df.mean(axis=1)
+print("\nDataFrame with Mean column:")
+print(df)
