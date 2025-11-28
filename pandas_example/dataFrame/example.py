@@ -26,9 +26,6 @@ import pandas as pd
 # df = pd.DataFrame(data)
 # print(df)
 
-
-
-
 data = {
     'City': ['Kathmandu', 'Kathmandu', 'Pokhara', 'Pokhara'],
     'Sales': [200, 300, 150, 400]
