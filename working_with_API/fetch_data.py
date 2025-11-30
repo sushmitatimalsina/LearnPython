@@ -53,8 +53,8 @@ for item in data:
         "PostID": item["postId"],
         "CommentID": item["id"],
         "Name": item["name"].strip().title(),
-        "Email": item["email"],
-        "Body": item["body"]
+        "Email": item["email"].lower().strip(),
+        "Body": item["body"].strip()
     })
 
 df = pd.DataFrame(comments)
