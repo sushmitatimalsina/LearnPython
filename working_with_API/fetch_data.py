@@ -52,7 +52,7 @@ for item in data:
     comments.append({
         "PostID": item["postId"],
         "CommentID": item["id"],
-        "Name": item["name"],
+        "Name": item["name"].strip().title(),
         "Email": item["email"],
         "Body": item["body"]
     })
