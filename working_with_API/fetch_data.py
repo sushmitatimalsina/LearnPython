@@ -70,4 +70,7 @@ print("Data saved to 'api_comments.html'")
 df.to_excel("api_comments.xlsx", index=False)
 print("Data saved to 'api_comments.xlsx'")
 
+df = pd.DataFrame(comments)
+
+df = df.drop_duplicates()
 
