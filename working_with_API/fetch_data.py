@@ -74,3 +74,5 @@ df = pd.DataFrame(comments)
 
 df = df.drop_duplicates()
 
+df.to_json("clean_api_comments.json", orient="records", lines=True)
+
