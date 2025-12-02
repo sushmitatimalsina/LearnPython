@@ -145,3 +145,7 @@ print(random_numbers)
 
 random_nums = np.random.randint(1, 100, size=5)
 print(random_nums)
+
+arr = np.array([10, 20, 30])
+result = arr * 2
+print(result)
