@@ -142,3 +142,6 @@ print(matrix)
 
 random_numbers = np.random.randint(1, 100, size=(3,3))
 print(random_numbers)
+
+random_nums = np.random.randint(1, 100, size=5)
+print(random_nums)
