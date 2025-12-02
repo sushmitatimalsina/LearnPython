@@ -139,3 +139,6 @@ import numpy as np
 
 matrix = np.array([[1, 2, 3], [4, 5, 6], [7,8,9]])
 print(matrix)
+
+random_numbers = np.random.randint(1, 100, size=(3,3))
+print(random_numbers)
