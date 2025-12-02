@@ -23,3 +23,6 @@ data = {
 
 df = pd.DataFrame(data)
 print(df)
+
+df = pd.read_csv("new_students.csv")
+print(df.head())
