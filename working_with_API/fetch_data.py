@@ -95,6 +95,9 @@ print(df)
 df.to_csv("api_albums.csv", index=False)
 print("Data saved to 'api_albums.csv'")
 
+df.to_excel("api_albums.xlsx", index=False)
+print("Data saved to 'api_albums.xlsx'")
+
 
 
 table = PrettyTable()
@@ -104,5 +107,12 @@ for _, row in df.iterrows():
     table.add_row([row["UserID"], row["AlbumID"], row["Title"]])
 
 print(table)
+
+
+# df.to_json("api_albums.json", orient="records", lines=True)
+# print("Data saved to 'api_albums.json'")
+
+df.to_excel("api_albums.xlsx", index=False)
+print("Data saved to 'api_albums.xlsx'")
 
 
