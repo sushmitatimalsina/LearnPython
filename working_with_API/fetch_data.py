@@ -42,37 +42,56 @@ import pandas as pd
 # df.to_csv("api_posts.csv", index=False)
 # print("Data saved to 'api_posts.csv'")  
 
-url = "https://jsonplaceholder.typicode.com/comments"
+# url = "https://jsonplaceholder.typicode.com/comments"
+# response = requests.get(url)
+# data = response.json()
+# print(data[0])
+
+# comments = []
+# for item in data:
+#     comments.append({
+#         "PostID": item["postId"],
+#         "CommentID": item["id"],
+#         "Name": item["name"].strip().title(),
+#         "Email": item["email"].lower().strip(),
+#         "Body": item["body"].strip()
+#     })
+
+# df = pd.DataFrame(comments)
+# print(df)
+# df.to_json("api_comments.json", orient="records", lines=True)
+# print("Data saved to 'api_comments.json'")
+
+
+# df_html = df.to_html()
+# with open("api_comments.html", "w") as file:
+#     file.write(df_html)
+# print("Data saved to 'api_comments.html'")
+# df.to_excel("api_comments.xlsx", index=False)
+# print("Data saved to 'api_comments.xlsx'")
+
+# df = pd.DataFrame(comments)
+
+# df = df.drop_duplicates()
+
+# df.to_json("clean_api_comments.json", orient="records", lines=True)
+
+url = "https://jsonplaceholder.typicode.com/albums"
 response = requests.get(url)
 data = response.json()
 print(data[0])
 
-comments = []
+albums = []
 for item in data:
-    comments.append({
-        "PostID": item["postId"],
-        "CommentID": item["id"],
-        "Name": item["name"].strip().title(),
-        "Email": item["email"].lower().strip(),
-        "Body": item["body"].strip()
+    albums.append({
+        "UserID": item["userId"],
+        "AlbumID": item["id"],
+        "Title": item["title"].strip().title()
     })
 
-df = pd.DataFrame(comments)
+df = pd.DataFrame(albums)
 print(df)
-df.to_json("api_comments.json", orient="records", lines=True)
-print("Data saved to 'api_comments.json'")
+df.to_csv("api_albums.csv", index=False)
+print("Data saved to 'api_albums.csv'")
 
-
-df_html = df.to_html()
-with open("api_comments.html", "w") as file:
-    file.write(df_html)
-print("Data saved to 'api_comments.html'")
-df.to_excel("api_comments.xlsx", index=False)
-print("Data saved to 'api_comments.xlsx'")
-
-df = pd.DataFrame(comments)
-
-df = df.drop_duplicates()
-
-df.to_json("clean_api_comments.json", orient="records", lines=True)
 
