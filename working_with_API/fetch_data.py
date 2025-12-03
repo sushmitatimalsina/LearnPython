@@ -1,5 +1,6 @@
 import requests
 import pandas as pd
+from prettytable import PrettyTable
 
 # url = "https://jsonplaceholder.typicode.com/users"
 # response = requests.get(url)
@@ -93,5 +94,15 @@ df = pd.DataFrame(albums)
 print(df)
 df.to_csv("api_albums.csv", index=False)
 print("Data saved to 'api_albums.csv'")
+
+
+
+table = PrettyTable()
+table.field_names = ["UserID", "AlbumID", "Title"]
+
+for _, row in df.iterrows():
+    table.add_row([row["UserID"], row["AlbumID"], row["Title"]])
+
+print(table)
 
 
