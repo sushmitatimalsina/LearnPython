@@ -148,7 +148,13 @@ import numpy as np
 # # Transpose
 # print("Transpose of A:\n", A.T)
 
-data = np.array([10, 20, -1, 30, -1, 40], dtype=float)
-missing_mask = data == -1
-data[missing_mask] = data[~missing_mask].mean()
-print("Data after handling missing values:", data)
+# data = np.array([10, 20, -1, 30, -1, 40], dtype=float)
+# missing_mask = data == -1
+# data[missing_mask] = data[~missing_mask].mean()
+# print("Data after handling missing values:", data)
+
+sales = np.array([1200, 1500, 1100, 1700, 1600])
+print("Total Sales:", np.sum(sales))
+# print("Average Sales:", np.mean(sales))
+# print("Max Sale:", np.max(sales))
+# print("Sales Std Dev:", np.std(sales))
