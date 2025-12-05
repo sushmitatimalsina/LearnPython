@@ -156,5 +156,5 @@ import numpy as np
 sales = np.array([1200, 1500, 1100, 1700, 1600])
 print("Total Sales:", np.sum(sales))
 print("Average Sales:", np.mean(sales))
-# print("Max Sale:", np.max(sales))
+print("Max Sale:", np.max(sales))
 # print("Sales Std Dev:", np.std(sales))
