@@ -54,96 +54,101 @@ import numpy as np
 # print("Max:", arr.max())
 
 
-arr = np.array([10, 20, 30, 40, 50])
+# arr = np.array([10, 20, 30, 40, 50])
 
-# Access elements
-print("First element:", arr[0])
-print("Last element:", arr[-1])
+# # Access elements
+# print("First element:", arr[0])
+# print("Last element:", arr[-1])
 
-# Slice
-print("Elements 1 to 3:", arr[1:4])
+# # Slice
+# print("Elements 1 to 3:", arr[1:4])
 
-matrix = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+# matrix = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-# Access row
-print("First row:", matrix[0])
+# # Access row
+# print("First row:", matrix[0])
 
-# Access column
-print("Second column:", matrix[:, 1])
+# # Access column
+# print("Second column:", matrix[:, 1])
 
-# Element-wise operations
-print("Multiply by 2:\n", matrix * 2)
+# # Element-wise operations
+# print("Multiply by 2:\n", matrix * 2)
 
-# Random integers from 0 to 9
-rand_int = np.random.randint(0, 10, size=(3, 3))
-print("Random Integers:\n", rand_int)
+# # Random integers from 0 to 9
+# rand_int = np.random.randint(0, 10, size=(3, 3))
+# print("Random Integers:\n", rand_int)
 
-# Random floats between 0 and 1
-rand_float = np.random.rand(3, 3)
-print("Random Floats:\n", rand_float)
+# # Random floats between 0 and 1
+# rand_float = np.random.rand(3, 3)
+# print("Random Floats:\n", rand_float)
 
-import numpy as np
+# import numpy as np
 
-arr = np.arange(12)  # array from 0 to 11
-print("Original array:", arr)
+# arr = np.arange(12)  # array from 0 to 11
+# print("Original array:", arr)
 
-# Reshape to 3x4
-reshaped = arr.reshape(3, 4)
-print("Reshaped array (3x4):\n", reshaped)
+# # Reshape to 3x4
+# reshaped = arr.reshape(3, 4)
+# print("Reshaped array (3x4):\n", reshaped)
 
-# Flatten back
-flattened = reshaped.flatten()
-print("Flattened array:", flattened)
-
-
-arr = np.array([10, 15, 20, 25, 30])
-
-# Filter values greater than 20
-filtered = arr[arr > 20]
-print("Values greater than 20:", filtered)
-
-# Boolean mask
-mask = arr % 20 == 0
-print("Mask for values divisible by 20:", mask)
-print("Filtered values:", arr[mask])
+# # Flatten back
+# flattened = reshaped.flatten()
+# print("Flattened array:", flattened)
 
 
+# arr = np.array([10, 15, 20, 25, 30])
 
-matrix = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+# # Filter values greater than 20
+# filtered = arr[arr > 20]
+# print("Values greater than 20:", filtered)
 
-# Sum of all elements
-print("Total sum:", matrix.sum())
+# # Boolean mask
+# mask = arr % 20 == 0
+# print("Mask for values divisible by 20:", mask)
+# print("Filtered values:", arr[mask])
 
-# Sum along rows (axis=1)
-print("Sum of each row:", matrix.sum(axis=1))
 
-# Sum along columns (axis=0)
-print("Sum of each column:", matrix.sum(axis=0))
 
-# Mean along columns
-print("Mean of each column:", matrix.mean(axis=0))
+# matrix = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
-a = np.array([1, 2, 3])
-b = np.array([4, 5, 6])
+# # Sum of all elements
+# print("Total sum:", matrix.sum())
 
-# Horizontal stack
-h_stack = np.hstack((a, b))
-print("Horizontal Stack:", h_stack)
+# # Sum along rows (axis=1)
+# print("Sum of each row:", matrix.sum(axis=1))
 
-# Vertical stack
-v_stack = np.vstack((a, b))
-print("Vertical Stack:\n", v_stack)
+# # Sum along columns (axis=0)
+# print("Sum of each column:", matrix.sum(axis=0))
 
-A = np.array([[1, 2], [3, 4]])
-B = np.array([[5, 6], [7, 8]])
+# # Mean along columns
+# print("Mean of each column:", matrix.mean(axis=0))
 
-# Matrix multiplication
-C = np.dot(A, B)
-print("Matrix multiplication:\n", C)
+# a = np.array([1, 2, 3])
+# b = np.array([4, 5, 6])
 
-# Element-wise multiplication
-E = A * B
-print("Element-wise multiplication:\n", E)
+# # Horizontal stack
+# h_stack = np.hstack((a, b))
+# print("Horizontal Stack:", h_stack)
 
-# Transpose
-print("Transpose of A:\n", A.T)
+# # Vertical stack
+# v_stack = np.vstack((a, b))
+# print("Vertical Stack:\n", v_stack)
+
+# A = np.array([[1, 2], [3, 4]])
+# B = np.array([[5, 6], [7, 8]])
+
+# # Matrix multiplication
+# C = np.dot(A, B)
+# print("Matrix multiplication:\n", C)
+
+# # Element-wise multiplication
+# E = A * B
+# print("Element-wise multiplication:\n", E)
+
+# # Transpose
+# print("Transpose of A:\n", A.T)
+
+data = np.array([10, 20, -1, 30, -1, 40], dtype=float)
+missing_mask = data == -1
+data[missing_mask] = data[~missing_mask].mean()
+print("Data after handling missing values:", data)
