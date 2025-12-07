@@ -14,3 +14,10 @@ total_revenue = revenue.sum()
 print("Total Revenue:", total_revenue)
 print("Average revenue per transaction:", revenue.mean())
 print("Highest revenue from a single transaction:", revenue.max())
+
+products = np.unique(sales_data[:,0])
+print("\Revenue by product")
+for p in products:
+    total = revenue[sales_data[:,0] == p].sum()
+    print(f"Product {p}: {total}")
+    
