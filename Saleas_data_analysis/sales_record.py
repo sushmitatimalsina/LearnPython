@@ -12,3 +12,4 @@ sales_data = np.array([
 revenue = sales_data[:, 1] * sales_data[:, 2]
 total_revenue = revenue.sum()
 print("Total Revenue:", total_revenue)
+print("Average revenue per transaction:", revenue.mean())
