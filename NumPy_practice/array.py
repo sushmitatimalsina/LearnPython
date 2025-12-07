@@ -158,3 +158,5 @@ print("Total Sales:", np.sum(sales))
 print("Average Sales:", np.mean(sales))
 print("Max Sale:", np.max(sales))
 print("Sales Std Dev:", np.std(sales))
+
+
