@@ -178,3 +178,6 @@ print("Sum:", np.sum(data))
 print("Mean:", np.mean(data))
 print("Max:", np.max(data))
 print("Min:", np.min(data))
+
+filtered_data = data[data > 25]
+print("Filtered array (greater than 25):", filtered_data)
