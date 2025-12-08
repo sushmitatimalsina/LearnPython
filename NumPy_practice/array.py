@@ -184,3 +184,6 @@ print("Filtered array (greater than 25):", filtered_data)
 
 row_sums = np.sum(matrix, axis=1)
 print("Sum of each row in matrix:", row_sums)
+
+col_means = np.mean(matrix, axis=0)
+print("Mean of each column in matrix:", col_means)
