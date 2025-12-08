@@ -167,3 +167,9 @@ matrix = np.array([[1, 2, 3],
                    [4, 5, 6],
                    [7, 8, 9]])
 print("2D matrix:\n", matrix)
+
+added_array = data + 5
+print("Array after addition:", added_array)
+
+squared_array = data ** 2
+print("Squared array:", squared_array)
