@@ -181,3 +181,6 @@ print("Min:", np.min(data))
 
 filtered_data = data[data > 25]
 print("Filtered array (greater than 25):", filtered_data)
+
+row_sums = np.sum(matrix, axis=1)
+print("Sum of each row in matrix:", row_sums)
