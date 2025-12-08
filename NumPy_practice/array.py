@@ -173,3 +173,8 @@ print("Array after addition:", added_array)
 
 squared_array = data ** 2
 print("Squared array:", squared_array)
+
+print("Sum:", np.sum(data))
+print("Mean:", np.mean(data))
+print("Max:", np.max(data))
+print("Min:", np.min(data))
