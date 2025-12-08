@@ -153,10 +153,17 @@ import numpy as np
 # data[missing_mask] = data[~missing_mask].mean()
 # print("Data after handling missing values:", data)
 
-sales = np.array([1200, 1500, 1100, 1700, 1600])
-print("Total Sales:", np.sum(sales))
-print("Average Sales:", np.mean(sales))
-print("Max Sale:", np.max(sales))
-print("Sales Std Dev:", np.std(sales))
+# sales = np.array([1200, 1500, 1100, 1700, 1600])
+# print("Total Sales:", np.sum(sales))
+# print("Average Sales:", np.mean(sales))
+# print("Max Sale:", np.max(sales))
+# print("Sales Std Dev:", np.std(sales))
 
 
+data = np.array([10, 20, 30, 40, 50])
+print("Original array:", data)
+
+matrix = np.array([[1, 2, 3],
+                   [4, 5, 6],
+                   [7, 8, 9]])
+print("2D matrix:\n", matrix)
