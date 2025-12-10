@@ -36,3 +36,5 @@ print("Array * 2:", arr * 2)            # multiply each element by 2
 print("Sum of array:", np.sum(arr))     # sum of elements
 print("Mean of array:", np.mean(arr))   # average
 print("Max of array:", np.max(arr))     # maximum element
+
+print("\nElement at index 2:", arr[2])
