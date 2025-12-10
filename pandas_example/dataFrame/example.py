@@ -26,13 +26,25 @@ import pandas as pd
 # df = pd.DataFrame(data)
 # print(df)
 
-data = {
-    'City': ['Kathmandu', 'Kathmandu', 'Pokhara', 'Pokhara'],
-    'Sales': [200, 300, 150, 400]
-}
+# data = {
+#     'City': ['Kathmandu', 'Kathmandu', 'Pokhara', 'Pokhara'],
+#     'Sales': [200, 300, 150, 400]
+# }
 
-df = pd.DataFrame(data)
+# df = pd.DataFrame(data)
 
-# Group by city and sum sales
-grouped = df.groupby('City')['Sales'].sum()
-print(grouped)
+# # Group by city and sum sales
+# grouped = df.groupby('City')['Sales'].sum()
+# print(grouped)
+
+
+
+import pandas as pd
+
+chunk_size = 3
+for chunk in pd.read_csv(r"d:\python\python\pandas_example\dataFrame\sales_data.csv", chunksize=chunk_size):
+    print(chunk)
+
+
+
+
