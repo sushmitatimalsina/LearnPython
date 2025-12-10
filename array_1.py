@@ -38,3 +38,4 @@ print("Mean of array:", np.mean(arr))   # average
 print("Max of array:", np.max(arr))     # maximum element
 
 print("\nElement at index 2:", arr[2])
+print("Slice from index 1 to 3:", arr[1:4])
