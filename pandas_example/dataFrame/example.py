@@ -45,6 +45,8 @@ chunk_size = 3
 for chunk in pd.read_csv(r"d:\python\python\pandas_example\dataFrame\sales_data.csv", chunksize=chunk_size):
     print(chunk)
 
+    
+
 
 
 
