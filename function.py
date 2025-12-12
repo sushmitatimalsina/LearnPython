@@ -152,3 +152,9 @@ def fibonacci(n):
         fib_sequence.append(next_value)
     return fib_sequence[:n]
 print("Fibonacci sequence of 7 terms:", fibonacci(7))
+
+def welcome(name="Guest"):
+    print("Welcome,", name)
+
+welcome()
+welcome("Ram")    
