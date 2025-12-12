@@ -54,70 +54,74 @@ import pandas as pd
 
 # print(sum_numbers(1, 2, 3, 4))  # 10
 
-# # **kwargs: multiple keyword arguments
-# def print_details(**kwargs):
-#     for key, value in kwargs.items():
-#         print(f"{key}: {value}")
+# # # **kwargs: multiple keyword arguments
+# # def print_details(**kwargs):
+# #     for key, value in kwargs.items():
+# #         print(f"{key}: {value}")
 
-# print_details(name="Sushmita", age=22, city="Kathmandu")
+# # print_details(name="Sushmita", age=22, city="Kathmandu")
 
-# def arithmetic_operations(a, b):
-#     sum_ = a + b
-#     diff = a - b
-#     prod = a * b
-#     return sum_, diff, prod
+# # def arithmetic_operations(a, b):
+# #     sum_ = a + b
+# #     diff = a - b
+# #     prod = a * b
+# #     return sum_, diff, prod
 
-# s, d, p = arithmetic_operations(10, 5)
-# print(s, d, p)
-
-
-# Example 1: Clean dataframe
-def clean_data(df):
-    df = df.drop_duplicates()
-    df = df.fillna(0)
-    return df
-
-# Example 2: Filter dataframe by age
-def filter_adults(df):
-    return df[df['age'] >= 18]
-
-# Example 3: Add new column
-def add_full_name(df):
-    df['full_name'] = df['first_name'] + " " + df['last_name']
-    return df
-
-# Usage
-df = pd.DataFrame({
-    'first_name': ['John', 'Jane'],
-    'last_name': ['Doe', 'Smith'],
-    'age': [17, 22]
-})
-
-df = clean_data(df)
-df = filter_adults(df)
-df = add_full_name(df)
-print(df)
-
-# Simple lambda
-square = lambda x: x**2
-print(square(5))  # 25
-
-# Lambda inside map
-numbers = [1, 2, 3, 4]
-squared_numbers = list(map(lambda x: x**2, numbers))
-print(squared_numbers)  # [1, 4, 9, 16]
+# # s, d, p = arithmetic_operations(10, 5)
+# # print(s, d, p)
 
 
-def check_age(age):
-    if age >= 18:
-        return "Adult"
-    else:
-        return "Minor"
+# # Example 1: Clean dataframe
+# def clean_data(df):
+#     df = df.drop_duplicates()
+#     df = df.fillna(0)
+#     return df
 
-print(check_age(20))
-print(check_age(12))
+# # Example 2: Filter dataframe by age
+# def filter_adults(df):
+#     return df[df['age'] >= 18]
 
-def filter_even(numbers):
-    return [n for n in numbers if n % 2 == 0]
+# # Example 3: Add new column
+# def add_full_name(df):
+#     df['full_name'] = df['first_name'] + " " + df['last_name']
+#     return df
 
-print(filter_even([1, 2, 3, 4, 5, 6]))
+# # Usage
+# df = pd.DataFrame({
+#     'first_name': ['John', 'Jane'],
+#     'last_name': ['Doe', 'Smith'],
+#     'age': [17, 22]
+# })
+
+# df = clean_data(df)
+# df = filter_adults(df)
+# df = add_full_name(df)
+# print(df)
+
+# # Simple lambda
+# square = lambda x: x**2
+# print(square(5))  # 25
+
+# # Lambda inside map
+# numbers = [1, 2, 3, 4]
+# squared_numbers = list(map(lambda x: x**2, numbers))
+# print(squared_numbers)  # [1, 4, 9, 16]
+
+
+# def check_age(age):
+#     if age >= 18:
+#         return "Adult"
+#     else:
+#         return "Minor"
+
+# print(check_age(20))
+# print(check_age(12))
+
+# def filter_even(numbers):
+#     return [n for n in numbers if n % 2 == 0]
+
+# print(filter_even([1, 2, 3, 4, 5, 6]))
+
+def greet():
+    print("Hello! Welcome to Python.")
+greet()
