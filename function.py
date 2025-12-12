@@ -125,3 +125,7 @@ import pandas as pd
 def greet():
     print("Hello! Welcome to Python.")
 greet()
+
+def say_hello(name):
+    print("Hello", name)
+say_hello("Sushmita")
