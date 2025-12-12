@@ -129,3 +129,8 @@ greet()
 def say_hello(name):
     print("Hello", name)
 say_hello("Sushmita")
+
+def add(a, b):
+    return a + b
+result = add(5, 10)
+print("Sum is:", result)
