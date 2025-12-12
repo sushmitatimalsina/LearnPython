@@ -134,3 +134,21 @@ def add(a, b):
     return a + b
 result = add(5, 10)
 print("Sum is:", result)
+
+
+def multiply(x, y=2):
+    return x * y
+print("Multiply:", multiply(5))
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+print("Factorial of 5:", factorial(5))
+def fibonacci(n):
+    fib_sequence = [0, 1]
+    for i in range(2, n):
+        next_value = fib_sequence[i-1] + fib_sequence[i-2]
+        fib_sequence.append(next_value)
+    return fib_sequence[:n]
+print("Fibonacci sequence of 7 terms:", fibonacci(7))
