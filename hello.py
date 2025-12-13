@@ -156,3 +156,11 @@ numbers = np.array([10, 20, 30, 40, 50])
 # Loop through the array
 for num in numbers:
     print(num)
+
+data = np.array([1, 2, 3, 4, 5])
+
+# Multiply each element by 2 using loop
+for i in range(len(data)):
+    data[i] = data[i] * 2
+
+print(data)    
