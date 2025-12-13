@@ -164,3 +164,13 @@ for i in range(len(data)):
     data[i] = data[i] * 2
 
 print(data)    
+
+
+matrix = np.array([
+    [1, 2, 3],
+    [4, 5, 6]
+])
+
+for row in matrix:
+    for value in row:
+        print(value)
