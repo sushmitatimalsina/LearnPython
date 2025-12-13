@@ -137,15 +137,22 @@
 
 import numpy as np
 
-matrix = np.array([[1, 2, 3], [4, 5, 6], [7,8,9]])
-print(matrix)
+# matrix = np.array([[1, 2, 3], [4, 5, 6], [7,8,9]])
+# print(matrix)
 
-random_numbers = np.random.randint(1, 100, size=(3,3))
-print(random_numbers)
+# random_numbers = np.random.randint(1, 100, size=(3,3))
+# print(random_numbers)
 
-random_nums = np.random.randint(1, 100, size=5)
-print(random_nums)
+# random_nums = np.random.randint(1, 100, size=5)
+# print(random_nums)
 
-arr = np.array([10, 20, 30])
-result = arr * 2
-print(result)
+# arr = np.array([10, 20, 30])
+# result = arr * 2
+# print(result)
+
+# Create a NumPy array
+numbers = np.array([10, 20, 30, 40, 50])
+
+# Loop through the array
+for num in numbers:
+    print(num)
