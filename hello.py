@@ -176,7 +176,16 @@ for row in matrix:
         print(value)
 
 
-arr = np.array([[10, 20], [30, 40]])
+# arr = np.array([[10, 20], [30, 40]])
 
-for x in np.nditer(arr):
-    print(x)       
+# for x in np.nditer(arr):
+#     print(x)      
+
+
+arr = np.array([2, 4, 6, 8])
+total = 0
+
+for num in arr:
+    total += num
+
+print("Sum:", total)     
