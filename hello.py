@@ -174,3 +174,9 @@ matrix = np.array([
 for row in matrix:
     for value in row:
         print(value)
+
+
+arr = np.array([[10, 20], [30, 40]])
+
+for x in np.nditer(arr):
+    print(x)       
