@@ -185,3 +185,14 @@ def total_salary():
     return df["Salary"].sum()
 
 print(total_salary())
+
+def show_high_salary(df):
+    return df[df["Salary"] > 22000]
+
+data = {
+    "Name": ["Ram", "Shyam", "Hari"],
+    "Salary": [20000, 25000, 30000]
+}
+
+df = pd.DataFrame(data)
+print(show_high_salary(df))
