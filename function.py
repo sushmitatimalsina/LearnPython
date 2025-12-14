@@ -239,3 +239,11 @@ def fetch_api_data():
 
 df = fetch_api_data()
 print(df.head())
+
+
+def fetch_posts():
+    url = "https://jsonplaceholder.typicode.com/posts"
+    response = requests.get(url)
+    return response.json()
+
+print(fetch_posts()[:2])
