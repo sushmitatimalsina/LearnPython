@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import requests
 
 # def my_function():
 
@@ -219,3 +220,11 @@ def high_sales_days():
     return df[df["Sales"] > 6000]
 
 print(high_sales_days())
+
+def fetch_users():
+    url = "https://jsonplaceholder.typicode.com/users"
+    response = requests.get(url)
+    return response.json()
+
+users = fetch_users()
+print(users)
