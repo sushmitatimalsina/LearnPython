@@ -163,98 +163,98 @@ import requests
 # 
 # 
 #  
-def calculate_average(number):
-    arr = np.array(number)
-    return np.mean(arr)
+# def calculate_average(number):
+#     arr = np.array(number)
+#     return np.mean(arr)
 
-result = calculate_average([10, 20, 30, 40, 50])
-print("Average is:", result)
+# result = calculate_average([10, 20, 30, 40, 50])
+# print("Average is:", result)
 
-def find_maximum(number):
-    arr = np.array(number)
-    return np.max(arr)
-result = find_maximum([10, 20, 30, 40, 50])
-print("Maximum is:", result)
+# def find_maximum(number):
+#     arr = np.array(number)
+#     return np.max(arr)
+# result = find_maximum([10, 20, 30, 40, 50])
+# print("Maximum is:", result)
 
-def total_salary():
-    data = {
-        "Name": ["Ram", "Shyam", "Hari"],
-        "Salary": [20000, 25000, 30000]
-    }
+# def total_salary():
+#     data = {
+#         "Name": ["Ram", "Shyam", "Hari"],
+#         "Salary": [20000, 25000, 30000]
+#     }
     
-    df = pd.DataFrame(data)
-    return df["Salary"].sum()
+#     df = pd.DataFrame(data)
+#     return df["Salary"].sum()
 
-print(total_salary())
+# print(total_salary())
 
-def show_high_salary(df):
-    return df[df["Salary"] > 22000]
+# def show_high_salary(df):
+#     return df[df["Salary"] > 22000]
 
-data = {
-    "Name": ["Ram", "Shyam", "Hari"],
-    "Salary": [20000, 25000, 30000]
-}
+# data = {
+#     "Name": ["Ram", "Shyam", "Hari"],
+#     "Salary": [20000, 25000, 30000]
+# }
 
-df = pd.DataFrame(data)
-print(show_high_salary(df))
+# df = pd.DataFrame(data)
+# print(show_high_salary(df))
 
-def calculate_total_sales():
-    data = {
-        "Day": ["Sun", "Mon", "Tue", "Wed"],
-        "Sales": [5000, 7000, 6500, 8000]
-    }
+# def calculate_total_sales():
+#     data = {
+#         "Day": ["Sun", "Mon", "Tue", "Wed"],
+#         "Sales": [5000, 7000, 6500, 8000]
+#     }
 
-    df = pd.DataFrame(data)
-    total_sales = df["Sales"].sum()
-    return total_sales
+#     df = pd.DataFrame(data)
+#     total_sales = df["Sales"].sum()
+#     return total_sales
 
-print(calculate_total_sales())
+# print(calculate_total_sales())
 
-def high_sales_days():
-    data = {
-        "Day": ["Sun", "Mon", "Tue", "Wed"],
-        "Sales": [5000, 7000, 6500, 8000]
-    }
+# def high_sales_days():
+#     data = {
+#         "Day": ["Sun", "Mon", "Tue", "Wed"],
+#         "Sales": [5000, 7000, 6500, 8000]
+#     }
 
-    df = pd.DataFrame(data)
-    return df[df["Sales"] > 6000]
+#     df = pd.DataFrame(data)
+#     return df[df["Sales"] > 6000]
 
-print(high_sales_days())
+# print(high_sales_days())
 
-def fetch_users():
-    url = "https://jsonplaceholder.typicode.com/users"
-    response = requests.get(url)
-    return response.json()
+# def fetch_users():
+#     url = "https://jsonplaceholder.typicode.com/users"
+#     response = requests.get(url)
+#     return response.json()
 
-users = fetch_users()
-print(users)
-
-
-def fetch_api_data():
-    url = "https://jsonplaceholder.typicode.com/posts"
-    response = requests.get(url)
-    data = response.json()
-    df = pd.DataFrame(data)
-    return df
-
-df = fetch_api_data()
-print(df.head())
+# users = fetch_users()
+# print(users)
 
 
-def fetch_posts():
-    url = "https://jsonplaceholder.typicode.com/posts"
-    response = requests.get(url)
-    return response.json()
+# def fetch_api_data():
+#     url = "https://jsonplaceholder.typicode.com/posts"
+#     response = requests.get(url)
+#     data = response.json()
+#     df = pd.DataFrame(data)
+#     return df
 
-print(fetch_posts()[:2])
+# df = fetch_api_data()
+# print(df.head())
 
-def api_to_dataframe():
-    url = "https://jsonplaceholder.typicode.com/users"
-    data = requests.get(url).json()
-    df = pd.DataFrame(data)
-    return df[["id", "name", "email"]]
 
-print(api_to_dataframe())
+# def fetch_posts():
+#     url = "https://jsonplaceholder.typicode.com/posts"
+#     response = requests.get(url)
+#     return response.json()
+
+# print(fetch_posts()[:2])
+
+# def api_to_dataframe():
+#     url = "https://jsonplaceholder.typicode.com/users"
+#     data = requests.get(url).json()
+#     df = pd.DataFrame(data)
+#     return df[["id", "name", "email"]]
+
+# print(api_to_dataframe())
 
 # file handling with functions
 def write_file():
@@ -278,3 +278,17 @@ def append_file():
     file.close()
 
 append_file()
+
+def read_lines():
+    file = open("output.txt", "r")
+    for line in file:
+        print(line.strip())
+    file.close()
+
+read_lines()
+
+def read_file_safe():
+    with open("output.txt", "r") as file:
+        return file.read()
+
+print(read_file_safe())
