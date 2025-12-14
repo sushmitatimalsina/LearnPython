@@ -196,3 +196,15 @@ data = {
 
 df = pd.DataFrame(data)
 print(show_high_salary(df))
+
+def calculate_total_sales():
+    data = {
+        "Day": ["Sun", "Mon", "Tue", "Wed"],
+        "Sales": [5000, 7000, 6500, 8000]
+    }
+
+    df = pd.DataFrame(data)
+    total_sales = df["Sales"].sum()
+    return total_sales
+
+print(calculate_total_sales())
