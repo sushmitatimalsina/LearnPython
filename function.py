@@ -208,3 +208,14 @@ def calculate_total_sales():
     return total_sales
 
 print(calculate_total_sales())
+
+def high_sales_days():
+    data = {
+        "Day": ["Sun", "Mon", "Tue", "Wed"],
+        "Sales": [5000, 7000, 6500, 8000]
+    }
+
+    df = pd.DataFrame(data)
+    return df[df["Sales"] > 6000]
+
+print(high_sales_days())
