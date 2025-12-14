@@ -247,3 +247,11 @@ def fetch_posts():
     return response.json()
 
 print(fetch_posts()[:2])
+
+def api_to_dataframe():
+    url = "https://jsonplaceholder.typicode.com/users"
+    data = requests.get(url).json()
+    df = pd.DataFrame(data)
+    return df[["id", "name", "email"]]
+
+print(api_to_dataframe())
