@@ -174,3 +174,14 @@ def find_maximum(number):
     return np.max(arr)
 result = find_maximum([10, 20, 30, 40, 50])
 print("Maximum is:", result)
+
+def total_salary():
+    data = {
+        "Name": ["Ram", "Shyam", "Hari"],
+        "Salary": [20000, 25000, 30000]
+    }
+    
+    df = pd.DataFrame(data)
+    return df["Salary"].sum()
+
+print(total_salary())
