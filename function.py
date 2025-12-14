@@ -255,3 +255,11 @@ def api_to_dataframe():
     return df[["id", "name", "email"]]
 
 print(api_to_dataframe())
+
+# file handling with functions
+def write_file():
+    file = open("output.txt", "w")
+    file.write("Hello, this is file handling in Python.")
+    file.close()
+
+write_file()
