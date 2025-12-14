@@ -168,3 +168,9 @@ def calculate_average(number):
 
 result = calculate_average([10, 20, 30, 40, 50])
 print("Average is:", result)
+
+def find_maximum(number):
+    arr = np.array(number)
+    return np.max(arr)
+result = find_maximum([10, 20, 30, 40, 50])
+print("Maximum is:", result)
