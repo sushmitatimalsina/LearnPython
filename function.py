@@ -271,3 +271,10 @@ def read_file():
     return content
 
 print(read_file())
+
+def append_file():
+    file = open("output.txt", "a")
+    file.write("\nThis line is appended.")
+    file.close()
+
+append_file()
