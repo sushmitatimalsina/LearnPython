@@ -263,3 +263,11 @@ def write_file():
     file.close()
 
 write_file()
+
+def read_file():
+    file = open("output.txt", "r")
+    content = file.read()
+    file.close()
+    return content
+
+print(read_file())
