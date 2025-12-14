@@ -1,1 +1,2 @@
 Hello, this is file handling in Python.
+This line is appended.
