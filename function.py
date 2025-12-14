@@ -228,3 +228,14 @@ def fetch_users():
 
 users = fetch_users()
 print(users)
+
+
+def fetch_api_data():
+    url = "https://jsonplaceholder.typicode.com/posts"
+    response = requests.get(url)
+    data = response.json()
+    df = pd.DataFrame(data)
+    return df
+
+df = fetch_api_data()
+print(df.head())
