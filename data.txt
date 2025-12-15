@@ -1,3 +1,6 @@
 Data Engineer
 Python File Handling
 Hi there !
+Appending new line 1.
+Appending new line 2.
+Appending new line 3.
