@@ -119,5 +119,8 @@ from prettytable import PrettyTable
 url = "https://jsonplaceholder.typicode.com/users"
 response = requests.get(url)
 data = response.json()
+
+df = pd.DataFrame(data)
 print(data)
+print(df.head())
 
