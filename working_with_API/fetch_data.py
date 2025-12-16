@@ -77,42 +77,47 @@ from prettytable import PrettyTable
 
 # df.to_json("clean_api_comments.json", orient="records", lines=True)
 
-url = "https://jsonplaceholder.typicode.com/albums"
+# url = "https://jsonplaceholder.typicode.com/albums"
+# response = requests.get(url)
+# data = response.json()
+# print(data[0])
+
+# albums = []
+# for item in data:
+#     albums.append({
+#         "UserID": item["userId"],
+#         "AlbumID": item["id"],
+#         "Title": item["title"].strip().title()
+#     })
+
+# df = pd.DataFrame(albums)
+# print(df)
+# df.to_csv("api_albums.csv", index=False)
+# print("Data saved to 'api_albums.csv'")
+
+# df.to_excel("api_albums.xlsx", index=False)
+# print("Data saved to 'api_albums.xlsx'")
+
+
+
+# table = PrettyTable()
+# table.field_names = ["UserID", "AlbumID", "Title"]
+
+# for _, row in df.iterrows():
+#     table.add_row([row["UserID"], row["AlbumID"], row["Title"]])
+
+# print(table)
+
+
+# # df.to_json("api_albums.json", orient="records", lines=True)
+# # print("Data saved to 'api_albums.json'")
+
+# df.to_excel("api_albums.xlsx", index=False)
+# print("Data saved to 'api_albums.xlsx'")
+
+
+url = "https://jsonplaceholder.typicode.com/users"
 response = requests.get(url)
 data = response.json()
-print(data[0])
-
-albums = []
-for item in data:
-    albums.append({
-        "UserID": item["userId"],
-        "AlbumID": item["id"],
-        "Title": item["title"].strip().title()
-    })
-
-df = pd.DataFrame(albums)
-print(df)
-df.to_csv("api_albums.csv", index=False)
-print("Data saved to 'api_albums.csv'")
-
-df.to_excel("api_albums.xlsx", index=False)
-print("Data saved to 'api_albums.xlsx'")
-
-
-
-table = PrettyTable()
-table.field_names = ["UserID", "AlbumID", "Title"]
-
-for _, row in df.iterrows():
-    table.add_row([row["UserID"], row["AlbumID"], row["Title"]])
-
-print(table)
-
-
-# df.to_json("api_albums.json", orient="records", lines=True)
-# print("Data saved to 'api_albums.json'")
-
-df.to_excel("api_albums.xlsx", index=False)
-print("Data saved to 'api_albums.xlsx'")
-
+print(data)
 
