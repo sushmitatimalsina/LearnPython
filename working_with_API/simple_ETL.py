@@ -9,3 +9,4 @@ df = df[["userId", "title"]]
 
 df.to_csv("posts.csv", index=False)
 print("ETL from API completed")
+
