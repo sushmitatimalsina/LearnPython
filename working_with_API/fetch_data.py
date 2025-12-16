@@ -127,3 +127,6 @@ print(df.head())
 df.to_csv("api_users1.csv", index=False)
 print("Data saved to 'api_users1.csv'")
 
+filtered_df = df[["id", "name", "username", "email", "address"]]
+print(filtered_df.head())
+
