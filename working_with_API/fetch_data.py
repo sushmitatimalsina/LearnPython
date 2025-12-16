@@ -124,3 +124,6 @@ df = pd.DataFrame(data)
 print(data)
 print(df.head())
 
+df.to_csv("api_users1.csv", index=False)
+print("Data saved to 'api_users1.csv'")
+
