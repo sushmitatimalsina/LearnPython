@@ -20,4 +20,7 @@ df = df[["id", "name", "email", "phone"]]
 df = df.rename(columns={"name": "user_name"})
 df = df.drop_duplicates()
 
+df.to_csv("clean_users.csv", index=False)
+print("Cleaned user data saved to 'clean_users.csv'")
+
 
