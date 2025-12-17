@@ -312,10 +312,10 @@ my_function("Sushil")
 my_function("Saraswoti")
 my_function("Govinda Prasad")
 
-# def student(name, sirname):
-#     print(name + " " + sirname)
+def student(name, sirname):
+    print(name + " " + sirname)
 
-# student("Asmita", "Timalsina")
+student("Asmita", "Timalsina")
 
 
    
