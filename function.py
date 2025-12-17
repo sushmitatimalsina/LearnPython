@@ -257,38 +257,43 @@ import requests
 # print(api_to_dataframe())
 
 # file handling with functions
-def write_file():
-    file = open("output.txt", "w")
-    file.write("Hello, this is file handling in Python.")
-    file.close()
+# def write_file():
+#     file = open("output.txt", "w")
+#     file.write("Hello, this is file handling in Python.")
+#     file.close()
 
-write_file()
+# write_file()
 
-def read_file():
-    file = open("output.txt", "r")
-    content = file.read()
-    file.close()
-    return content
+# def read_file():
+#     file = open("output.txt", "r")
+#     content = file.read()
+#     file.close()
+#     return content
 
-print(read_file())
+# print(read_file())
 
-def append_file():
-    file = open("output.txt", "a")
-    file.write("\nThis line is appended.")
-    file.close()
+# def append_file():
+#     file = open("output.txt", "a")
+#     file.write("\nThis line is appended.")
+#     file.close()
 
-append_file()
+# append_file()
 
-def read_lines():
-    file = open("output.txt", "r")
-    for line in file:
-        print(line.strip())
-    file.close()
+# def read_lines():
+#     file = open("output.txt", "r")
+#     for line in file:
+#         print(line.strip())
+#     file.close()
 
-read_lines()
+# read_lines()
 
-def read_file_safe():
-    with open("output.txt", "r") as file:
-        return file.read()
+# def read_file_safe():
+#     with open("output.txt", "r") as file:
+#         return file.read()
 
-print(read_file_safe())
+# print(read_file_safe())
+
+def my_function():
+    print("Hello from a function")
+
+my_function()
