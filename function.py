@@ -304,5 +304,18 @@ def fahrenheit_to_celsius(f):
 print(fahrenheit_to_celsius(100))
 print(fahrenheit_to_celsius(50))
 
+def my_function(fname):
+    print(fname + " Timalsina")
+
+my_function("Sushmita")
+my_function("Sushil")
+my_function("Saraswoti")
+my_function("Govinda Prasad")
+
+# def student(name, sirname):
+#     print(name + " " + sirname)
+
+# student("Asmita", "Timalsina")
+
 
    
