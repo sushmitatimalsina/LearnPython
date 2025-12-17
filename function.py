@@ -317,5 +317,14 @@ def student(name, sirname):
 
 student("Asmita", "Timalsina")
 
+def my_function(name = "friend"):
+    print("hello", name)
+
+my_function()
+my_function("Sushmita")
+my_function("Sushil")
+my_function("Saraswoti")
+my_function("Govinda Prasad")
+
 
    
