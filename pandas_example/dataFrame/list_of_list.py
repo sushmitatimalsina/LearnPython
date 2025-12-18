@@ -45,4 +45,5 @@ for post in posts_data:
     post_id, user_id, title, body = post
     print(f"Inserting post {post_id} for user {user_id}")
 
-
+df = pd.DataFrame(data, columns=["ID", "Name", "Email"])
+print(df)
