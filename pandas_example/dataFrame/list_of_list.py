@@ -27,3 +27,6 @@ print(data[0])
 
 print(data[1][1])
 
+for row in data:
+    print(f"ID: {row[0]}, Name: {row[1]}, Email: {row[2]}")
+
