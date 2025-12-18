@@ -34,4 +34,15 @@ new_row = [4, "David", "david@example.com"]
 data.append(new_row)
 print(data)
 
+posts_data = [
+    [1, 1, "Post 1", "Content 1"],
+    [2, 1, "Post 2", "Content 2"],
+    [3, 2, "Post 3", "Content 3"]
+]
+
+# Load into MySQL (conceptual)
+for post in posts_data:
+    post_id, user_id, title, body = post
+    print(f"Inserting post {post_id} for user {user_id}")
+
 
