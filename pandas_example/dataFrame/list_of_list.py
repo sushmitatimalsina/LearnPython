@@ -30,3 +30,8 @@ print(data[1][1])
 for row in data:
     print(f"ID: {row[0]}, Name: {row[1]}, Email: {row[2]}")
 
+new_row = [4, "David", "david@example.com"]
+data.append(new_row)
+print(data)
+
+
