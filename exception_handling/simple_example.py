@@ -28,4 +28,8 @@ try:
     file = open("data.csv", "r")
     print("file opened")
 except FileNotFoundError:
-    print("error: file not found")    
+    print("error: file not found")  
+
+else:
+    print("file opened successfully")
+    file.closed()
