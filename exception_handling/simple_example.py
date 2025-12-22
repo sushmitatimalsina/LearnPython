@@ -8,11 +8,18 @@
 # else:
 #     print("This runs because no error occurred")
 
+# try:
+#     number = int("abc")
+
+# except ValueError:
+#     print("Conversion failed")
+
+# else:
+#     print("No error occurred")   
+
 try:
-    number = int("abc")
+    result = 10 / 2
+    print("Result:", result)
 
-except ValueError:
-    print("Conversion failed")
-
-else:
-    print("No error occurred")   
+except ZeroDivisionError:
+    print("Cannot divide by zero")
