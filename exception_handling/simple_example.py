@@ -30,6 +30,9 @@ try:
 except FileNotFoundError:
     print("error: file not found")  
 
-else:
-    print("file opened successfully")
-    file.closed()
+# else:
+#     print("file opened successfully")
+#     file.closed()
+
+finally:
+    print("this always runs")
