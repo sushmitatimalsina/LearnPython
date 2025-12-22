@@ -17,9 +17,15 @@
 # else:
 #     print("No error occurred")   
 
-try:
-    result = 10 / 2
-    print("Result:", result)
+# try:
+#     result = 10 / 2
+#     print("Result:", result)
 
-except ZeroDivisionError:
-    print("Cannot divide by zero")
+# except ZeroDivisionError:
+#     print("Cannot divide by zero")
+
+try:
+    file = open("data.csv", "r")
+    print("file opened")
+except FileNotFoundError:
+    print("error: file not found")    
