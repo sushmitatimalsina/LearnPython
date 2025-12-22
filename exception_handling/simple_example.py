@@ -24,15 +24,25 @@
 # except ZeroDivisionError:
 #     print("Cannot divide by zero")
 
+# try:
+#     file = open("data.csv", "r")
+#     print("file opened")
+# except FileNotFoundError:
+#     print("error: file not found")  
+
+# # else:
+# #     print("file opened successfully")
+# #     file.closed()
+
+# finally:
+#     print("this always runs")
+
 try:
-    file = open("data.csv", "r")
-    print("file opened")
-except FileNotFoundError:
-    print("error: file not found")  
+    x= int("abc")
+    y= 10/0
 
-# else:
-#     print("file opened successfully")
-#     file.closed()
+except ValueError:
+    print("value error occured")
 
-finally:
-    print("this always runs")
+except ZeroDivisionError:
+    print("Division error occured")
