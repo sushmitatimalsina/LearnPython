@@ -11,3 +11,7 @@ print(df.duplicated().sum())
 df_no_duplicates = df.drop_duplicates()
 print("after removing duplicate:")
 print(df_no_duplicates)
+
+df_clean = df_no_duplicates.dropna()
+print("after removing null values:")
+print(df_clean)
