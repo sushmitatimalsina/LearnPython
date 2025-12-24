@@ -15,3 +15,10 @@ print(df_no_duplicates)
 df_clean = df_no_duplicates.dropna()
 print("after removing null values:")
 print(df_clean)
+
+bad_records = df[df.isnull().any(axis=1)]
+good_records = df[~df.isnull().any(axis=1)]
+
+df["name"] = df["name"].fillna("not provided")
+df["city"] = df["city"].fillna("unknown")
+df["email"] = df["email"].fillna("abc@gmail.com")
