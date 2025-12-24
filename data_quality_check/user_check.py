@@ -22,3 +22,5 @@ good_records = df[~df.isnull().any(axis=1)]
 df["name"] = df["name"].fillna("not provided")
 df["city"] = df["city"].fillna("unknown")
 df["email"] = df["email"].fillna("abc@gmail.com")
+
+df = df.drop_duplicates(subset=["user_id"], keep="last")
