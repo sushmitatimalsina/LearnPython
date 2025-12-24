@@ -24,3 +24,8 @@ df["city"] = df["city"].fillna("unknown")
 df["email"] = df["email"].fillna("abc@gmail.com")
 
 df = df.drop_duplicates(subset=["user_id"], keep="last")
+
+invalid_email = ~df["email"].str.contains("@")
+df.loc[invalid_email, "email"] = "invalid@unknown.com"
+
+df["is_valid"] = df.notnull().all(axis=1)
