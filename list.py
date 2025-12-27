@@ -2,102 +2,105 @@ import numpy as np
 import array as arr
 
 
-fruits = ["apple", "banana", "mango"]
-print(fruits[0])
-print(fruits[2])
-fruits.append("orange")
-print(fruits)
+# fruits = ["apple", "banana", "mango"]
+# print(fruits[0])
+# print(fruits[2])
+# fruits.append("orange")
+# print(fruits)
 
-nums = np.array([1, 2, 3, 4, 5])
-print(nums * 2) 
+# nums = np.array([1, 2, 3, 4, 5])
+# print(nums * 2) 
 
-number = [1,2,3,4,5]
-print(number * 2)
+# number = [1,2,3,4,5]
+# print(number * 2)
 
-a = np.array([1, 2, 3])
-b = np.array([4, 5, 6])
-print(a + b)
+# a = np.array([1, 2, 3])
+# b = np.array([4, 5, 6])
+# print(a + b)
 
-arry = arr.array('d',[1.1, 1.2, 1.3,])
-print(arry[1])
-arry.append(1.4)
-print(arry)
-for x in arry:
-    print(x)
-print("=====")
-for y in arry[1:3]:
-    print(y)
+# arry = arr.array('d',[1.1, 1.2, 1.3,])
+# print(arry[1])
+# arry.append(1.4)
+# print(arry)
+# for x in arry:
+#     print(x)
+# print("=====")
+# for y in arry[1:3]:
+#     print(y)
 
-questions = ['name', 'address', 'favorite color']
-answers = ['sushmita ', 'banepa', 'blue']
-for q, a in zip(questions, answers):
-     print('What is your {0}?  It is {1}.'.format(q, a))
-
-
-for i in reversed(range(1, 10, 2)):
-    print(i)     
+# questions = ['name', 'address', 'favorite color']
+# answers = ['sushmita ', 'banepa', 'blue']
+# for q, a in zip(questions, answers):
+#      print('What is your {0}?  It is {1}.'.format(q, a))
 
 
-basket = ['apple', 'orange', 'pear', 'orange', 'banana']   
-for f in sorted(basket):
-    print(f)
-    print("====")
-for s in sorted(set(basket)):
-    print(s)    
+# for i in reversed(range(1, 10, 2)):
+#     print(i)     
+
+
+# basket = ['apple', 'orange', 'pear', 'orange', 'banana']   
+# for f in sorted(basket):
+#     print(f)
+#     print("====")
+# for s in sorted(set(basket)):
+#     print(s)    
     
 
-my_array = [7, 8, 9 ,4, 5, 1, 0]
-minVal = my_array[0]
+# my_array = [7, 8, 9 ,4, 5, 1, 0]
+# minVal = my_array[0]
 
-for i in my_array:
-    if i < minVal:
-        minVal = i
-print("min Value is ", minVal)
+# for i in my_array:
+#     if i < minVal:
+#         minVal = i
+# print("min Value is ", minVal)
 
-n = len(my_array)
+# n = len(my_array)
 
-for m in range(n-1):
-    for k in range(n-m-1):
-        if my_array[k] > my_array[k + 1]:
-            my_array[k], my_array[k + 1] =  my_array[k + 1] , my_array[k]
+# for m in range(n-1):
+#     for k in range(n-m-1):
+#         if my_array[k] > my_array[k + 1]:
+#             my_array[k], my_array[k + 1] =  my_array[k + 1] , my_array[k]
 
-print("Sorted array:", my_array)
+# print("Sorted array:", my_array)
 
-thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
-# thislist.insert(1, "orange")
+# thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+# # thislist.insert(1, "orange")
+# # print(thislist)
+# # thislist.remove("banana")
+# # print(thislist)
+
+# # thislist[1:3] = ["blackcurrant", "watermelon"]
+# # print(thislist)
+
+
+# tropical = ["mango", "pineapple", "papaya"]
+# thislist.extend(tropical)
 # print(thislist)
-# thislist.remove("banana")
+# thislist.pop()
 # print(thislist)
 
-# thislist[1:3] = ["blackcurrant", "watermelon"]
+# del thislist[0]
 # print(thislist)
 
+# # del thislist
+# # print(thislist)  # This will raise an error because 'thislist' is deleted
 
-tropical = ["mango", "pineapple", "papaya"]
-thislist.extend(tropical)
-print(thislist)
-thislist.pop()
-print(thislist)
+# # thislist.clear()
+# # print(thislist)  # This will print an empty list []
+# print(len(thislist))
+# tropical.clear()
+# print(len(tropical))
 
-del thislist[0]
-print(thislist)
+# numbers = [12, 45, 7, 23, 89, 5, 33]
+# print("maximum number is ", max(numbers))
+# print("minimum number is ", min(numbers))
+# print("sum is ", sum(numbers))
+# print("sorted list is ", sorted(numbers))
+# print("reversed list is ", list(reversed(numbers)))
+# print("original list is ", numbers)
 
-# del thislist
-# print(thislist)  # This will raise an error because 'thislist' is deleted
-
-# thislist.clear()
-# print(thislist)  # This will print an empty list []
-print(len(thislist))
-tropical.clear()
-print(len(tropical))
-
-numbers = [12, 45, 7, 23, 89, 5, 33]
-print("maximum number is ", max(numbers))
-print("minimum number is ", min(numbers))
-print("sum is ", sum(numbers))
-print("sorted list is ", sorted(numbers))
-print("reversed list is ", list(reversed(numbers)))
-print("original list is ", numbers)
+data = [1, "Ram", 25, True]
+print(data)
 
 
 
