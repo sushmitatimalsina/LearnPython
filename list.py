@@ -99,8 +99,12 @@ import array as arr
 # print("reversed list is ", list(reversed(numbers)))
 # print("original list is ", numbers)
 
-data = [1, "Ram", 25, True]
-print(data)
+# data = [1, "Ram", 25, True]
+# print(data)
+
+cities = ["Kathmandu", "Pokhara"]
+cities.append("Lalitpur")
+print(cities)
 
 
 
