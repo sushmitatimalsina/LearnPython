@@ -106,6 +106,9 @@ cities = ["Kathmandu", "Pokhara"]
 cities.append("Lalitpur")
 print(cities)
 
+cities.remove("Pokhara")
+print(cities)
+
 
 
 
