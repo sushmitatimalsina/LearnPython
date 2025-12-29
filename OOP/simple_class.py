@@ -34,4 +34,12 @@ class User:
 
 # Create object
 user1 = User("Ram", "ram@gmail.com")
-user1.greet()     
+user1.greet()  
+
+user2 = User("Sita", "sita@gmail.com")
+user3 = User("Hari", "hari@gmail.com")
+
+users = [user1, user2, user3]
+
+for u in users:
+    u.greet()
