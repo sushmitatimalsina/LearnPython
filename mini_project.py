@@ -7,8 +7,8 @@ data = response.json()
 print(f"Fetched {len(data)} users from API")
 df = pd.DataFrame(data)
 df = df[["id", "name", "email", "address"]]
-# df["city"] = df["address"].apply(lambda x: x["city"])
-# df = df.drop(columns=["address"])
+df["city"] = df["address"].apply(lambda x: x["city"])
+df = df.drop(columns=["address"])
 
-# print("\nRaw data:")
-# print(df.head())
+print("\nRaw data:")
+print(df.head())
