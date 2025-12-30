@@ -12,3 +12,10 @@ df = df.drop(columns=["address"])
 
 print("\nRaw data:")
 print(df.head())
+
+df.loc[5, "name"] = None
+df.loc[2, "email"] = None
+df = pd.concat([df, df.iloc[0:2]])  
+
+print("\nData with duplicates and nulls:")
+print(df)
