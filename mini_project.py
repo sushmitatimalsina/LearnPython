@@ -25,3 +25,6 @@ df["email"] = df["email"].fillna("noemail@unknown.com")
 
 print("\nCleaned data:")
 print(df)
+
+df.to_csv("users_final.csv", index=False)
+print("\nETL completed! Data saved to users_final.csv")
