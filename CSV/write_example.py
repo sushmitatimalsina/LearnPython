@@ -30,3 +30,7 @@ data = {
 df = pd.DataFrame(data)
 print("Original data:")
 print(df) 
+
+df = df.drop_duplicates(subset=["user_id"])
+print("\nAfter removing duplicates:")
+print(df)
