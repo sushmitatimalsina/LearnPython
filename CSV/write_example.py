@@ -34,3 +34,5 @@ print(df)
 df = df.drop_duplicates(subset=["user_id"])
 print("\nAfter removing duplicates:")
 print(df)
+
+df["name"] = df["name"].fillna("Unknown")
