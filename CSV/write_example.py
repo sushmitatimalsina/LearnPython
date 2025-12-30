@@ -36,3 +36,4 @@ print("\nAfter removing duplicates:")
 print(df)
 
 df["name"] = df["name"].fillna("Unknown")
+df["city"] = df["city"].fillna("Unknown")
