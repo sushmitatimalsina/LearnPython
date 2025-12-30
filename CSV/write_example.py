@@ -37,3 +37,5 @@ print(df)
 
 df["name"] = df["name"].fillna("Unknown")
 df["city"] = df["city"].fillna("Unknown")
+print("\nAfter filling null values:")
+print(df)
