@@ -20,3 +20,8 @@ df = pd.concat([df, df.iloc[0:2]])
 print("\nData with duplicates and nulls:")
 print(df)
 df = df.drop_duplicates(subset=["id"], keep="last")
+df["name"] = df["name"].fillna("Unknown")
+df["email"] = df["email"].fillna("noemail@unknown.com")
+
+print("\nCleaned data:")
+print(df)
