@@ -56,11 +56,28 @@ def insert_data(conn):
     except pymysql.MySQLError as e:
         print("insert data error:", e)
     finally:
-        cursor.close()        
+        cursor.close()  
+
+def display_data(conn):
+    try:
+        cursor= conn.cursor()
+        query = "SELECT * FROM students"
+        cursor.execute(query)
+        results = cursor.fetchall()
+        for row in results:
+            print(row)
+
+    except pymysql.MySQLError as e:
+        print("display data error:", e)
+
+    finally:
+        cursor.close()            
 
 if conn:
     create_table(conn)
     insert_data(conn)
+    print("Fetched data from book_details table:")
+    display_data(conn)
     conn.close()
     print("MySQL connection closed")
 
