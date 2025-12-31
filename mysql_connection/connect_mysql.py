@@ -71,13 +71,28 @@ def display_data(conn):
         print("display data error:", e)
 
     finally:
-        cursor.close()            
+        cursor.close()   
+
+def update_faculty(conn):
+    try:
+        cursor = conn.cursor()
+        query = "ALTER TABLE students ADD COLUMN faculty VARCHAR(100)"
+        cursor.execute(query)
+        conn.commit()
+        print("Column 'faculty' added successfully")
+
+    except pymysql.MySQLError as e:
+        print("update faculty error:", e)
+
+    finally:
+        cursor.close()        
 
 if conn:
     create_table(conn)
-    insert_data(conn)
+    # insert_data(conn)
     print("Fetched data from book_details table:")
     display_data(conn)
+    update_faculty(conn)
     conn.close()
     print("MySQL connection closed")
 
