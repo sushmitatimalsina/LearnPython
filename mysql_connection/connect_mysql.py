@@ -94,7 +94,7 @@ def update_faculty1(conn):
             ("Science", "Sushmita"),
         
             ]
-        query = "UPDATE students SET faculty = %s WHERE id = 1"
+        query = "UPDATE students SET faculty = %s WHERE name = %s"
         cursor.executemany(query, updates)
         conn.commit()
         print("Faculty updated successfully")
@@ -103,7 +103,18 @@ def update_faculty1(conn):
         print("update faculty error:", e)
 
     finally:
-        cursor.close()        
+        cursor.close()  
+
+def delete_student_by_id(conn, student_id):
+    try:
+        cursor = conn.cursor()
+        cursor.execute("DELETE FROM students WHERE id=%s", (student_id,))
+        conn.commit()
+        print(f"Student with id={student_id} deleted successfully")
+    except pymysql.MySQLError as e:
+        print("Delete error:", e)
+    finally:
+        cursor.close()
         
 
 if conn:
@@ -113,6 +124,7 @@ if conn:
     display_data(conn)
     update_faculty(conn)
     update_faculty1(conn)
+    delete_student_by_id(conn, 1)
 
     conn.close()
     print("MySQL connection closed")
