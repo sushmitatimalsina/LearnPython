@@ -18,6 +18,29 @@ def get_mysql_connection():
 
 conn = get_mysql_connection()
 
+def create_table(conn):
+    try:
+        cursor= conn.cursor()
+        query = """
+        CREATE TABLE IF NOT EXISTS students(
+        id INT  AUTO_INCREMENT PRIMARY KEY,
+        name VARCHAR(100),
+        age INT,
+        city VARCHAR(50)
+        )
+        """
+        cursor.execute(query)
+        print("Table 'students' created successfully")
+    except pymysql.MySQLError as e:
+        print("create table error:", e)
+    finally:
+        cursor.close()
+
+
+
 if conn:
+    create_table(conn)
     conn.close()
     print("MySQL connection closed")
+
+
