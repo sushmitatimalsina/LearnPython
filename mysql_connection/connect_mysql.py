@@ -85,7 +85,26 @@ def update_faculty(conn):
         print("update faculty error:", e)
 
     finally:
+        cursor.close()   
+
+def update_faculty1(conn):
+    try:
+        cursor = conn.cursor()
+        updates = [
+            ("Science", "Sushmita"),
+        
+            ]
+        query = "UPDATE students SET faculty = %s WHERE id = 1"
+        cursor.executemany(query, updates)
+        conn.commit()
+        print("Faculty updated successfully")
+
+    except pymysql.MySQLError as e:
+        print("update faculty error:", e)
+
+    finally:
         cursor.close()        
+        
 
 if conn:
     create_table(conn)
@@ -93,6 +112,8 @@ if conn:
     print("Fetched data from book_details table:")
     display_data(conn)
     update_faculty(conn)
+    update_faculty1(conn)
+
     conn.close()
     print("MySQL connection closed")
 
