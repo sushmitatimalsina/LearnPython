@@ -48,7 +48,10 @@ def insert_data(conn):
         """
 
         data = [
-            ("sushmita Timalsina", 22, "Banepa")
+            ("sushmita Timalsina", 22, "Banepa"),
+            ("Ram Shrestha", 24, "Kathmandu"),
+            ("Sita Karki", 21, "Lalitpur"),
+            ("Hari Adhikari", 23, "Pokhara")
         ]
         cursor.executemany(query, data)
         conn.commit()
@@ -91,7 +94,9 @@ def update_faculty1(conn):
     try:
         cursor = conn.cursor()
         updates = [
-            ("Science", "Sushmita"),
+            ("Science", "Sita Karki"),
+            ("Arts", "Ram Shrestha")
+
         
             ]
         query = "UPDATE students SET faculty = %s WHERE name = %s"
@@ -105,26 +110,26 @@ def update_faculty1(conn):
     finally:
         cursor.close()  
 
-def delete_student_by_id(conn, student_id):
-    try:
-        cursor = conn.cursor()
-        cursor.execute("DELETE FROM students WHERE id=%s", (student_id,))
-        conn.commit()
-        print(f"Student with id={student_id} deleted successfully")
-    except pymysql.MySQLError as e:
-        print("Delete error:", e)
-    finally:
-        cursor.close()
+# def delete_student_by_id(conn, student_id):
+#     try:
+#         cursor = conn.cursor()
+#         cursor.execute("DELETE FROM students WHERE id=%s", (student_id,))
+#         conn.commit()
+#         print(f"Student with id={student_id} deleted successfully")
+#     except pymysql.MySQLError as e:
+#         print("Delete error:", e)
+#     finally:
+#         cursor.close()
         
 
 if conn:
     create_table(conn)
-    # insert_data(conn)
+    insert_data(conn)
     print("Fetched data from book_details table:")
     display_data(conn)
     update_faculty(conn)
     update_faculty1(conn)
-    delete_student_by_id(conn, 1)
+    # delete_student_by_id(conn, 1)
 
     conn.close()
     print("MySQL connection closed")
