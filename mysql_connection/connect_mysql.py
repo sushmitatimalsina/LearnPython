@@ -37,9 +37,30 @@ def create_table(conn):
         cursor.close()
 
 
+def insert_data(conn):
+    try:
+        cursor= conn.cursor()
+        query= """
+        INSERT INTO students(name, age,city)
+        values
+        (%s, %s, %s)
+
+        """
+
+        data = [
+            ("sushmita Timalsina", 22, "Banepa")
+        ]
+        cursor.executemany(query, data)
+        conn.commit()
+        print("data inserted successfully")
+    except pymysql.MySQLError as e:
+        print("insert data error:", e)
+    finally:
+        cursor.close()        
 
 if conn:
     create_table(conn)
+    insert_data(conn)
     conn.close()
     print("MySQL connection closed")
 
