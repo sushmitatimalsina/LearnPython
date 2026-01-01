@@ -27,6 +27,34 @@ def fetch_api_data():
         print("Error fetching API data:", e)
         return []
     
+
+def create_table(conn):
+    try:
+        cursor = conn.cursor()
+        query = """
+        CREATE TABLE IF NOT EXISTS api_users (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        name VARCHAR(100),
+        email VARCHAR(100),
+        city VARCHAR(50)
+        )
+        """
+        cursor.execute(query)
+        print("Table 'api_users' created successfully")
+
+
+    except pymysql.MySQLError as e:
+        print("create table error:", e)
+
+    finally:
+        cursor.close()        
+
 conn = get_mysql_connection()
 api_data = fetch_api_data()
+if conn:
+    create_table(conn)
+
+conn.close()
+print("MySQL connection closed")
+
 
