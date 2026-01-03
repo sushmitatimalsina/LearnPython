@@ -1,3 +1,5 @@
+import pandas as pd
+
 def clean_email(email):
     if email is None:
         return "noemail@unknown.com"
@@ -13,3 +15,8 @@ for user in users:
 
 for i in range(5):
     print(i)    
+
+df = pd.read_csv("users.csv")    
+df.to_csv("users_clean.csv", index=False)
+df.drop_duplicates(inplace=True)
+df.fillna("Unknown", inplace=True)
