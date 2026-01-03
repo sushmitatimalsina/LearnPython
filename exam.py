@@ -10,3 +10,6 @@ users = [
 
 for user in users:
     print(user["name"])
+
+for i in range(5):
+    print(i)    
