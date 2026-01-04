@@ -1,4 +1,5 @@
 import requests
+import logging
 
 def validate_user(user):
     if not user.get("id"):
@@ -29,3 +30,8 @@ def fetch_data(url):
         print("API error:", e)
         return []
 
+logging.basicConfig(level=logging.INFO)
+
+logging.info("ETL started")
+logging.warning("Missing email detected")
+logging.error("Database connection failed")
