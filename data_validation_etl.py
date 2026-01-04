@@ -1,3 +1,5 @@
+import requests
+
 def validate_user(user):
     if not user.get("id"):
         return False
@@ -18,3 +20,12 @@ for user in users:
         valid_users.append(user)
 
 print(valid_users)
+def fetch_data(url):
+    try:
+        response = requests.get(url, timeout=5)
+        response.raise_for_status()
+        return response.json()
+    except Exception as e:
+        print("API error:", e)
+        return []
+
