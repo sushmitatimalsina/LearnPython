@@ -1,4 +1,5 @@
-order_id,product,quantity,price,total_price
-1,Pen,10.0,5,50.0
-2,Notebook,5.0,50,250.0
-3,Pencil,20.0,2,40.0
+order_id,product,quantity,price,quantity_num,price_num,total_price
+1,Pen,10.0,5,10.0,5,50.0
+2,Notebook,5.0,50,5.0,50,250.0
+3,Pencil,20.0,2,20.0,2,40.0
+4,Eraser,Not Available,3,,3,
