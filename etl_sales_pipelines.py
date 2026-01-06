@@ -8,3 +8,7 @@ def transform_data(df):
     df.dropna(inplace=True)
     df['total_price'] = df['quantity']*df['unit_price']
     return df
+
+def load_data(df):
+    df.to_csv("cleaned_sales_data.csv", index=False)
+    
