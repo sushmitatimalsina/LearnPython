@@ -6,9 +6,12 @@ def extract_data():
 
 def transform_data(df):
     df['quantity'] = df['quantity'].fillna("Not Available")
-    
-    df.dropna(inplace=True)
-    df['total_price'] = df['quantity']*df['price']
+
+    # df.dropna(inplace=True)
+    df['quantity_num'] = pd.to_numeric(df['quantity'] , errors='coerce')
+    df['price_num'] = pd.to_numeric(df['price'], errors='coerce')
+
+    df['total_price'] = df['quantity_num']*df['price_num']
     return df
 
 def load_data(df):
