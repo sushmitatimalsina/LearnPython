@@ -11,4 +11,6 @@ print(student["courses"][1])
 student["age"] = 23
 student["email"] = "ajjashdahsj@gmail.com"
 print(student)
+del student["age"]
+print(student)
 
