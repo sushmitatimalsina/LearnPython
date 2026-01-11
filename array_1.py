@@ -59,4 +59,17 @@ employees = [
 
 for emp in employees:
     print(emp["name"], "-", emp["role"])
+    print("----------------")
+
+order = {
+    "order_id": 1001,
+    "customer": "Sushmita",
+    "items": ["Pen", "Notebook", "Pencil"],
+    "total_price": 340
+}
+
+print(order["customer"])
+print(order["items"])
+print(order["items"][0])   
+
 
