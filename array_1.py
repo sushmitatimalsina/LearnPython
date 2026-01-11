@@ -70,6 +70,18 @@ order = {
 
 print(order["customer"])
 print(order["items"])
-print(order["items"][0])   
+print(order["items"][0])  
+print("---------------------") 
+
+
+sales = [
+    {"order_id": 1, "product": "Pen", "quantity": 10, "price": 5},
+    {"order_id": 2, "product": "Notebook", "quantity": 5, "price": 50},
+    {"order_id": 3, "product": "Pencil", "quantity": 20, "price": 2}
+]
+
+for sale in sales:
+    total = sale["quantity"] * sale["price"]
+    print(sale["product"], "Total:", total)
 
 
