@@ -50,3 +50,13 @@ fruits = ["Apple", "Banana", "Orange"]
 for fruit in fruits:
     print(fruit)
 
+
+employees = [
+    {"id": 1, "name": "Ram", "role": "Analyst"},
+    {"id": 2, "name": "Sita", "role": "Engineer"},
+    {"id": 3, "name": "Hari", "role": "Manager"}
+]
+
+for emp in employees:
+    print(emp["name"], "-", emp["role"])
+
