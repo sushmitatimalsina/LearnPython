@@ -44,3 +44,9 @@ numbers =[10,20,30,40,50]
 
 print(numbers)
 print(numbers[4])
+
+fruits = ["Apple", "Banana", "Orange"]
+
+for fruit in fruits:
+    print(fruit)
+
