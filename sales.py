@@ -5,3 +5,10 @@ sales = [
 
 for items in sales:
     print(items["product"], items["quantity"])
+    items["total_price"] = items["quantity"] * items["price"]
+
+print("----- After Adding Total Price -----")
+for items in sales:
+    print(items["product"], "Total Price:", items["total_price"])
+    
+
