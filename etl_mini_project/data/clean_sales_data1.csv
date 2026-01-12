@@ -1,0 +1,4 @@
+order_id,product,quantity,price,total_price
+1,Pen,10,5,50
+2,Notebook,5,50,250
+3,Pencil,20,Not Available,0
