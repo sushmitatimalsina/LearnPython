@@ -1,0 +1,5 @@
+order_id,customer_name,amount,order_date
+1,Sita,1000,2026-02-25
+2,Ram,2000,2026-02-25
+3,Gita,,2026-02-25
+4,Hari,1500,2026-02-25
