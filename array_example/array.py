@@ -7,3 +7,13 @@ print(sales[2])
 
 for s in sales:
     print(s)
+
+def calculate_total(sales):
+    total = sum(sales)
+    return total
+
+sales = [1200, 1500, 900, 2000]
+
+result = calculate_total(sales)
+
+print("Total Sales:", result)
