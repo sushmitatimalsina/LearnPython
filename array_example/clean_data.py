@@ -10,3 +10,15 @@ for value in data:
 
 # Output
 print("Clean Data:", clean_data)
+
+
+
+data1 = ["10", "20", "30"]
+
+# Transform
+numbers = []
+
+for value in data1:
+    numbers.append(int(value))
+
+print(numbers)
