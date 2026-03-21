@@ -42,3 +42,15 @@ def print_numbers(arr):
         print(n)
 
 print_numbers(numbers)
+
+numbers = [10, 20, 30, 40]
+
+def find_sum(arr):
+    total = 0
+    for n in arr:
+        total = total + n
+    return total
+
+result = find_sum(numbers)
+
+print("Sum:", result)
