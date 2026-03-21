@@ -33,3 +33,12 @@ quantities = [2, 3, 4]
 result = calculate_revenue(prices, quantities)
 
 print("Revenue per product:", result)
+
+
+numbers = [1, 2, 3, 4, 5]
+
+def print_numbers(arr):
+    for n in arr:
+        print(n)
+
+print_numbers(numbers)
